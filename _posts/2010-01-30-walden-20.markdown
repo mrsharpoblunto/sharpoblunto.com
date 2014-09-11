@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Walden 2.0"
+date: 2010-01-30 06:01:02
+tags:
+- ramblings
+---
+
+In the classic novel ‘Walden’, Henry David Thoreau went to live by himself for over 2 years in a hut near the secluded Walden pond. He did this, not to live in total isolation, but rather to live at arms length from society in a simple largely self sufficient manner, in order that he could look upon his own life and the lives of others with a greater objectivity and understanding, or as he more poetically put it.
+
+
+    > “I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.”  
+
+
+
+Now in 1845 it was hard enough for him to achieve this goal, and now it is almost certainly impossible in 2010 to live in isolation, at least in the traditional sense. But what of the the meta lives that we all live out in various online communities?
+
+
+
+In the beginning, the web was intended to be a platform where most people would self host a (largely static) website, over time this has evolved (particularly with the advent of web 2.0) and now we have a situation where the vast majority of internet users communicate through a handful of large sites run by a third party (the google, facebook, myspace, digg, twitter etc.).
+
+
+
+I see a definite parallel between this loss of independence online and the loss of independence bought about by modern society. Now there are a number of good and valid reasons for this happening, the main one being that over time people tend to specialize as it makes society more efficient, and we resort to trade to fulfill the needs which we don’t have the skills to do ourselves.
+
+
+
+It makes sense that most non-technical people wouldn’t develop or host their own personal site/forum/blog, just as I wouldn’t consider trying to generate my own electricity or grow my own food (well I have considered it… but I’m probably not going to actually do it). However as someone who does have the technical knowhow, it begs an interesting question: Should I bother with the hassle, or should I just sign up to facebook?
+
+
+
+It’s not that I have anything against facebook or other web 2.0 services, but like Thoreau before he went to the woods, I’m not really sure whether this loss of independence (and by proxy loss of privacy) is a good or bad thing, but I’m willing to stay out in the wilderness for a while longer in order to make up my mind.
