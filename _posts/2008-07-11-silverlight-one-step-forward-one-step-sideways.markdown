@@ -23,7 +23,7 @@ In addition to the usual web.config changes to add an httphandler (detailed in t
   <mapping proxyEndPoint="amazon.ashx" remoteEndPoint="http://soap.amazon.com/onca/soap?Service=AWSECommerceService" />     
  </endPointMappings> 
 </soapProxyComponent>
-{% endhiglight %}
+{% endhighlight %}
 
 Then in Tarantula I had to change the service endpoint in the ServiceReferences.ClientConfig to point to the proxy address instead of the real endpoint.
 
