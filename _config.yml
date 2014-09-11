@@ -1,0 +1,18 @@
+# Site settings
+title: Sharpoblunto
+email: glenn.conner@sharpoblunto.com
+email_rot13: tyraa.pbaare@funecboyhagb.pbz
+location: San Francisco
+description: > # this means to ignore newlines until "baseurl:"
+    Over the event horizon - toward the singularity
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sharpoblunto.com" # the base hostname & protocol for your site
+twitter_username: mr_sharpoblunto
+github_username:  mrsharpoblunto
+permalink: /News/:year/:month/:day/:title.html
+paginate: 5 
+paginate_path: "/page:num"
+gems: 
+- jekyll-redirect-from
+# Build settings
+markdown: kramdown

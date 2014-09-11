@@ -1,0 +1,511 @@
+﻿body
+{
+	font-family: "Open Sans";
+	background-color: #000;
+}
+
+.container
+{
+	background-color:#ddd;
+}
+
+.content
+{
+	padding: 10px;
+}
+
+.infobox
+{
+	background: #222;
+	margin: 10px;
+	color: #ddd;
+}
+
+.logged-in
+{
+	float: right !important;
+	height: 60px;
+	line-height: 60px;
+}
+
+#header h3
+{
+	font-size: 18.5px;
+}
+
+/** header styles */
+@media (max-width: 480px)
+{
+	#header
+	{
+		height: 170px;
+		background: url(/assets/images/header-bg-tiny.jpg) no-repeat 0 0;
+	}
+
+	#header h3
+	{
+		font-size: 28px;
+	}
+
+	#header h3
+	{
+		font-size: 14.5px;
+	}
+}
+
+@media (min-width: 481px)
+{
+	#header
+	{
+		height: 170px;
+		background: url(/assets/images/header-bg-small.jpg) no-repeat 0 0;
+	}
+}
+@media (min-width: 980px)
+{
+	#header
+	{
+		height: 170px;
+		background: url(/assets/images/header-bg-medium.jpg) no-repeat 20px 0;
+	}
+}
+@media (min-width: 1200px)
+{
+	#header
+	{
+		height: 170px;
+		background: url(/assets/images/header-bg-large.jpg) no-repeat 30px 0;
+	}
+}
+
+#header div:first-child
+{
+	height:90px;
+	padding: 10px;
+}
+
+@media (max-width: 766px)
+{
+	body
+	{
+		padding: 0;
+	}
+
+	#header div:first-child
+	{
+		height:110px;
+	}
+}
+
+#header .header-bg
+{
+	background-color:#000;
+	opacity:0.7; 
+	height:60px;
+	position:absolute;
+	top:110px;
+}
+
+#header .header-nav
+{
+	position:absolute;
+	top:110px;
+}
+
+#nav-extra
+{
+	display: none;
+	margin-top:17px;
+}
+
+#nav-twitter, #nav-rss
+{
+	float:right;
+	width:26px;
+	height:26px;
+	text-indent:-9999px;
+}
+
+@media (min-width:766px)
+{
+	#nav-extra
+	{
+		display: block;
+	}
+
+	#nav-twitter
+	{
+		right: 61px;
+		background: url(/assets/images/twitter.png) no-repeat 0 0;
+	}
+
+	#nav-rss
+	{
+		right:30px;
+		margin-left:5px;
+		margin-right:10px;
+		background: url(/assets/images/rss.png) no-repeat 0 0;
+	}
+}
+
+#header ul
+{
+	height:60px;
+	margin: 0; 
+	float:left;
+}
+
+#header ul li
+{
+	list-style: none;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+
+#header ul li a
+{
+	font-family: "Lato";
+	text-decoration: none;
+	color: #ddd;
+}
+
+#header h5
+{
+	color: #ddd;
+	font-weight:300;
+	text-shadow: 0px 0px 3px #000;
+}
+
+#header h1
+{
+	font-family: "Lato";
+	font-size:49px;
+	text-shadow: 0px 0px 5px #000;
+}
+
+#header h1 span.light
+{
+	color: #ddd;
+}
+
+#header h1 span.dark
+{
+	color: #777;
+}
+
+/** footer styles */
+
+.container .row:last-child
+{
+	background-color: #000;
+}
+
+#footer
+{
+	font-size:10px;
+	background: #222;
+	padding: 10px;
+	text-align:center;
+	color:#ddd;
+}
+
+/** blog post styles */
+
+.post-content a img, .post-content p img
+{
+	display:block !important;
+	margin:auto;
+}
+
+.post 
+{
+    margin-bottom: 20px;
+}
+
+.post .label a
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+.news-archive
+{
+	padding: 10px;
+}
+
+.news-archive ul
+{
+	list-style: none;
+}
+
+.news-archive a
+{
+	text-decoration:none;
+}
+
+a.toggle {
+    cursor: pointer;
+}
+
+.toggle-arrow {
+    font-size: 12px;
+    float: left;
+    margin-right: 4px;
+}
+
+.collapsed ul
+{
+	display: none;
+}
+
+.readmore
+{
+	text-align:center;
+	padding:10px;
+}
+
+#disqus_thread
+{
+    margin-top: 20px;
+}
+
+/** twitter box styles */
+
+#twitter
+{
+	position:relative;
+	background: #eee;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding: 5px 5px 5px 60px;
+	min-height:72px;
+	margin:10px;
+}
+
+.twitteruser
+{
+	text-decoration:none;
+}
+
+.twitteruser img
+{
+	position:absolute;
+	left:5px;
+}
+
+.twittername
+{
+	color:#000;
+	font-weight:bold;
+	font-size:1.1em;
+}
+
+.twitterscreenname
+{
+	color:#888;
+	margin-left:5px;
+}
+
+#twitter .twitter-follow-button
+{
+	position:absolute;
+	right:5px;
+}
+
+.twitteractions
+{
+	bottom: 5px;
+	position: absolute;
+	right: 5px;
+}
+
+.twitteractions a
+{
+	margin-left:5px; 
+	text-decoration:none;
+	color:#888 !important;
+}
+
+.twitteractions i
+{
+	width:15px;
+	display:inline-block;
+	margin-right:2px;
+}
+
+.twitteractions i.favorite
+{
+	height:15px;
+	background:url('/assets/images/twitter-favorite.png') no-repeat;
+}
+
+.twitteractions i.retweet
+{
+	height:13px;
+	background:url('/assets/images/twitter-retweet.png') no-repeat;
+}
+
+.twitteractions i.reply
+{
+	height:14px;
+	background:url('/assets/images/twitter-reply.png') no-repeat;
+}
+
+.twitterdate
+{
+	text-decoration:none;
+	color:#888 !important;
+	position:absolute;
+	bottom:5px;
+}
+
+.tweet
+{
+	margin:8px 0px 25px 0px;
+}
+
+/** about page styles */
+
+@media (min-width: 480px)
+{
+	#aboutme
+	{
+		background: url("/assets/images/aboutme.jpg") no-repeat scroll 0 0 transparent;
+		height: 176px;
+		margin-top: 15px;
+		padding-left: 210px;
+		padding-top: 90px;
+	}
+}
+
+.github
+{
+	background: url("/assets/images/octocat.png") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 32px;
+	padding-left: 32px;
+	padding-top: 0.5em;
+}
+
+/** project page styles */
+.img-polaroid
+{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 1200px)
+{
+	.project-description
+	{
+		float: left;
+		width: 775px;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1199px)
+{
+	.project-description
+	{
+		float: left;
+		width: 545px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px)
+{
+	.project-description
+	{
+		float: left;
+		width: 329px;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.project-content
+	{
+		text-align: center;
+	}
+
+	.project-content img
+	{
+		float: none;
+	}
+
+	.project-content p
+	{
+		text-align: left;
+	}
+
+	.img-polaroid
+	{
+		margin: 0 0 15px 0;
+	}
+}
+
+@media (max-width: 480px)
+{
+	.img-polaroid
+	{
+		padding: 0;
+		margin: 0 0 15px 0;
+	}
+}
+
+/** bootstrap overrides */
+.btn
+{
+	background:#444;
+	border:none;
+	border-bottom: 5px solid #333;
+	box-shadow:none;
+	padding: 0.4rem 1.2rem 0.2rem;
+	text-transform: uppercase;
+	color:#fff;
+	font-size:12px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+	line-height:16px;
+}
+
+.btn:hover, .btn:focus
+{
+	background:#333;
+	color:#fff;
+}
+
+.btn-primary
+{
+	background:#006DCC;
+	border-bottom: 5px solid #0044cc;
+}
+
+.btn-primary:hover, .btn-primaryfocus
+{
+	background:#0044cc;
+}
+
+.btn-large
+{
+	padding: 0.6rem 1.5rem 0.3rem;
+	font-size:14px;
+	padding: 11px 19px 7px;
+}
+
+.page-header
+{
+	padding-bottom: 0;
+	margin: 20px 0px 10px;
+}
+
+
+.page-header h3
+{
+	line-height:20px;
+}
+
+.page-header .small
+{
+	color: #666;
+}
