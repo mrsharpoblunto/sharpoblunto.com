@@ -12,4 +12,4 @@ http://localhost:8080?text=hello world
 
 The http server also accepts http POST's and assumes that the contents of the post contains the text to speak. This tool is not only useful for pranks, its easy to integrate it into notification systems i.e. broken build or code check-in notifiers.  
 
-You can find the source and binaries for this application [here](http://www.sharpoblunto.com/Apps/Index/kmvNAsp8SEydMEP4Z3miNg)
+You can find the source for this application [here](https://github.com/mrsharpoblunto/voicenotifier)
