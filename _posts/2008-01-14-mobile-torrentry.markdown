@@ -19,4 +19,4 @@ So with utorrent and the webui all set up (heres a good guide [here](http://www.
 [![Untitled-3](/assets/images/news/55c9JmCevEyzoU9YIpgUcQ.jpg "Untitled-3")](/assets/images/news/BifV8YgIR0iqvitrksdhNA.jpg) 
 [![Untitled-2](/assets/images/news/JOmVYOHMF0yC7Yn1ryyTbw.jpg "Untitled-2")](/assets/images/news/3e3uQuxxakKrO2tgyvMFJg.jpg)   
 
-If you want to download this application directly to your mobile (CLDC 1.1/MIDP 2.0 compatible device required) enter this url into your mobile [http://www.sharpoblunto.com/Resources/Downloads/utorrent.jad](http://www.sharpoblunto.com/Resources/Downloads/utorrent.jad) The source is also available [here](https://github.com/mrsharpoblunto/utorrentmobile)
+You can download the application [here](/downloads/utorrent_bin.zip) The source is also available [here](https://github.com/mrsharpoblunto/utorrentmobile)
