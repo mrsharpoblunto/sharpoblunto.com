@@ -30,6 +30,6 @@ I also ripped through the server side c# code and gave everything a good polish,
 
 
 
-You can get the source for Dukes [here on GitHub](https://github.com/mrsharpoblunto/dukes), or if you want you can download the installer from [my projects page](http://www.sharpoblunto.com/Projects#dukes). 
+You can get the source for Dukes [here on GitHub](https://github.com/mrsharpoblunto/dukes), or if you want you can download the installer from [my projects page](/projects#dukes). 
 
 You might also have noticed that this site looks a little different as well – In addition to polishing up Dukes, I also went Bootstrap crazy and redid the skin for this site. The big plus from doing this is that the site now looks pretty nice on mobile devices without having to go through all the pain and suffering of having to build properly responsive CSS from scratch. Its definitely a simpler, and cleaner design than I had before, and hopefully its not too generically bootstrap’ish looking.
