@@ -7,7 +7,7 @@ tags:
 - programming
 ---
 
-After my [earlier experiments](http://www.sharpoblunto.com/News/2007/07/16/regarding-silverlight-services-and-somesuch) with the alpha releases of Silverlight 1.1 I was extremely keen to give the newly released Silverlight 2.0 Beta 1 a run for its money and port my Tarantula silverlight application from Silverlight 1.1 to silverlight 2.0. 
+After my [earlier experiments](/News/2007/07/16/regarding-silverlight-services-and-somesuch) with the alpha releases of Silverlight 1.1 I was extremely keen to give the newly released Silverlight 2.0 Beta 1 a run for its money and port my Tarantula silverlight application from Silverlight 1.1 to silverlight 2.0. 
 
 
 
