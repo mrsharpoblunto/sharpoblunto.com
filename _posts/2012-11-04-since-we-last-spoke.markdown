@@ -12,7 +12,11 @@ I wrote recently on junkship.net about [porting Junkship to use DirectX 11](http
 
 
 
-*   An improved Save game API that makes it impossible to corrupt existing save games if a save fails partway through.*   An upgraded input system using RawInput for mouse and keyboard input*   Now using JSON for all configuration files*   Game updates now specify when they want to upgrade the base framework version (framework updates are no longer centralized – each game decides for itself what framework version it wants to use)*   MSAA settings are now split into two separate settings, the back buffer MSAA level, and the recommended render target MSAA level. This allows more flexibility for applying MSAA specially when doing post processing effects.  
+*   An improved Save game API that makes it impossible to corrupt existing save games if a save fails partway through.
+*   An upgraded input system using RawInput for mouse and keyboard input
+*   Now using JSON for all configuration files
+*   Game updates now specify when they want to upgrade the base framework version (framework updates are no longer centralized – each game decides for itself what framework version it wants to use)
+*   MSAA settings are now split into two separate settings, the back buffer MSAA level, and the recommended render target MSAA level. This allows more flexibility for applying MSAA specially when doing post processing effects.  
 
 
 
@@ -21,7 +25,8 @@ NOTE: The old DirectX 9 version is still on GitHub but on the DX9 branch of the 
 
 
 In other news, twitter announced a few months ago that with the release of their 1.1 API that the 1.0 API is officially deprecated and will be shut off early next year. In addition to this all requests to the new API have to be signed using oauth 1.0. In order to ensure that the twitter control above continues to work I had to update the code to use the new API and to generate signed requests. In doing so I wrote a small C# library to generate signed requests to the twitter API, its [available on GitHub](https://github.com/mrsharpoblunto/TwitterAuth) for anyone who’s interested in checking it out. Using the library is pretty straightforward as shown in the example below.
-  <pre class="prettyprint linenums">
+
+{% highlight c# %}
 //use your real Twitter API tokens here
 string consumerKey = "XXX";
 string consumerSecret = "XXX";
@@ -35,6 +40,6 @@ HttpWebRequest signedRequest = api.GenerateSignedGetRequest("https://api.twitter
 
 //you can now use the signedRequest object to query the twitter API
 HttpResponse = (HttpWebResponse)request.GetResponse();
-</pre>
+{% endhighlight %}
 
 I also took the liberty over the last couple of months of moving the source code for most of the apps hosted on this site (along with some other random bits and pieces) over to GitHub. They range from a Lua based web MVC framework prototype, to remote automation servers, to website monitoring tools. Check out my [GitHub page](https://github.com/mrsharpoblunto) if you’re interested.
