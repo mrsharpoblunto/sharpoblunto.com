@@ -15,18 +15,22 @@ So to remedy this I had to write a proxy for the amazon.com services that was ho
 
 It works as an ASP.Net httphandler and maps local proxy endpoints to their real locations elsewhere on the net. To get it working all you need to do is have an ASP.Net website that will operate as the proxy, add a few config elements to the web.config, then point the silverlight client to the proxy address, and it will all just work as if you were communicating with the services hosted on an inaccessible domain.
 
-In addition to the usual web.config changes to add an httphandler (detailed in the instructions bundled with the soapproxy components download) I had to add the following config entry to the apps.junkship.org site to map the proxy end point to the real amazon service endpoint
+In addition to the usual web.config changes to add an httphandler (detailed in the instructions bundled with the soapproxy components download) I had to add the following config entry to the tarantula.sharpoblunto.com site to map the proxy end point to the real amazon service endpoint
 
-&lt;soapProxyComponent&gt;    
- &lt;endPointMappings&gt;     
- &lt;mapping proxyEndPoint=&quot;amazon.ashx&quot; remoteEndPoint=&quot;[http://soap.amazon.com/onca/soap?Service=AWSECommerceService&quot;](http://soap.amazon.com/onca/soap?Service=AWSECommerceService) /&gt;     
- &lt;/endPointMappings&gt; 
-&lt;/soapProxyComponent&gt;
+{% highlight xml %}
+<soapProxyComponent>    
+ <endPointMappings>     
+  <mapping proxyEndPoint="amazon.ashx" remoteEndPoint="http://soap.amazon.com/onca/soap?Service=AWSECommerceService" />     
+ </endPointMappings> 
+</soapProxyComponent>
+{% endhiglight %}
 
 Then in Tarantula I had to change the service endpoint in the ServiceReferences.ClientConfig to point to the proxy address instead of the real endpoint.
 
-&lt;endpoint address=[http://www.sharpoblunto.com/amazon.ashx](http://www.sharpoblunto.com/amazon.ashx)     
- binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;AWSECommerceServiceBinding&quot; 
-contract=&quot;Tarantula.AmazonWebService.AWSECommerceServicePortType&quot; name=&quot;AWSECommerceServicePort&quot; /&gt;
+{% highlight xml %}
+<endpoint address="http://www.sharpoblunto.com/amazon.ashx"    
+ binding="basicHttpBinding" bindingConfiguration="AWSECommerceServiceBinding" 
+contract="Tarantula.AmazonWebService.AWSECommerceServicePortType" name="AWSECommerceServicePort" />
+{% endhighlight %}
 
-In practice it's worked perfectly and I've bundled the component up for download (either binaries or source code) [here](http://www.sharpoblunto.com/Apps/Index/mod-gAabmU-21araqxLhrQ), hope it comes in handy for those trying to access third party web services from silverlight beta 2 apps.
+In practice it's worked perfectly. I hope this tip comes in handy for those trying to access third party web services from silverlight beta 2 apps.
