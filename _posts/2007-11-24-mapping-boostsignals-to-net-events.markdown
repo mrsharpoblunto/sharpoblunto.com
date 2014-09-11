@@ -39,7 +39,7 @@ private:
 
 The AddCopyProgressListener class accepts a pointer to a suitable callback function that conforms to the signature void(CopyProgressEvent) and adds that callback to the event handler 
 
-which can be used to notify all listeners of the event. All well and good so now to wrap it up in .net goodness using c++/cli. We'll be using the managed wrapper class I wrote in a previous blog entry ([here](http://www.sharpoblunto.com/News/2007/09/16/the-trip-to-c2b2bcli-with-unexpected-results)) as the basis for the file copier wrapper. 
+which can be used to notify all listeners of the event. All well and good so now to wrap it up in .net goodness using c++/cli. We'll be using the managed wrapper class I wrote in a previous blog entry ([here](/News/2007/09/16/the-trip-to-c2b2bcli-with-unexpected-results)) as the basis for the file copier wrapper. 
 
 The full interface for the wrapper class is shown below, in order for this to work we have to duplicate the copyProgressEvent in a managed class and supply our own delegate class and event for managed listeners to subscribe to. The notifyListeners method is what takes an unmanaged copyProgress event, wraps it up in its managed equivalent and passes it off to the event handler 
 
