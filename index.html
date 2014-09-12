@@ -27,7 +27,7 @@ layout: default
             <div class="pagination">
             <h5>
             {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | remove: 'index.html' }}">&laquo; Prev</a>
+                    <a href="{{ paginator.previous_page_path | remove: '/index.html' }}/">&laquo; Prev</a>
             {% else %}
                 <span>&laquo; Prev </span>
             {% endif %}
@@ -38,12 +38,12 @@ layout: default
                 {% elsif page == 1 %}
                     <a href="/">{{ page }}</a>
                 {% else %}
-                    <a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+                    <a href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
                 {% endif %}
             {% endfor %}
 
             {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}"> Next &raquo;</a>
+                <a href="{{ paginator.next_page_path }}/"> Next &raquo;</a>
             {% else %}
                 <span>Next &raquo;</span>
             {% endif %}
