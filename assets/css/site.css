@@ -21,11 +21,8 @@
 	color: #ddd;
 }
 
-.logged-in
-{
-	float: right !important;
-	height: 60px;
-	line-height: 60px;
+.content .pagination {
+    text-align:center;
 }
 
 #header h3
