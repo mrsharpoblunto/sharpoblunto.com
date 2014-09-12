@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The trip to c++/cli with unexpected results"
-date: 2007-09-16 07:09:00
+date: 2007-09-16 07:09:00 UTC
 tags:
 - cplusplus
 - programming
