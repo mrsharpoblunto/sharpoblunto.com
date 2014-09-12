@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Regarding silverlight, services and somesuch."
-date: 2007-07-16 06:07:00
+date: 2007-07-16 06:07:00 UTC
 tags:
 - silverlight
 - programming

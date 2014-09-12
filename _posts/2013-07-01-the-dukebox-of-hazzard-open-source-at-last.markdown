@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Dukebox of Hazzard, open source at last"
-date: 2013-07-01 02:07:24
+date: 2013-07-01 02:07:24 UTC
 tags:
 - dotnet
 - dukes
