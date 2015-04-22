@@ -71,7 +71,7 @@ var disqus_shortname = 'sharpoblunto'; // required: replace example with your fo
 </script>
 <script type="text/javascript">
     $(function() {
-        $.get('http://api.sharpoblunto.com/twitter',function(tweet) {
+        $.get('//api.sharpoblunto.com/twitter',function(tweet) {
             var html = '<scri'+'pt>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</scri'+'pt>';
             html += '<a class="twitteruser" href="http://www.twitter.com/' + tweet.ScreenName + '"><img src="' + tweet.Avatar + '" alt="'+ tweet.Name + '" />';
             html += '<span class="twittername">'+tweet.Name + '</span><span class="twitterscreenname">@'+tweet.ScreenName+'</span></a>';
