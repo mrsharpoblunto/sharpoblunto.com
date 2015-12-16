@@ -65,18 +65,3 @@ var disqus_shortname = 'sharpoblunto'; // required: replace example with your fo
  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
  }());
 </script>
-<script type="text/javascript">
-    $(function() {
-        $.get('//api.sharpoblunto.com/twitter',function(tweet) {
-            var html = '<scri'+'pt>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</scri'+'pt>';
-            html += '<a class="twitteruser" href="http://www.twitter.com/' + tweet.ScreenName + '"><img src="' + tweet.Avatar + '" alt="'+ tweet.Name + '" />';
-            html += '<span class="twittername">'+tweet.Name + '</span><span class="twitterscreenname">@'+tweet.ScreenName+'</span></a>';
-            html += '<a data-show-count="false" data-show-screen-name="false" class="twitter-follow-button" href="https://twitter.com/' + tweet.ScreenName + '">Follow</a>';
-            html += '<p class="tweet">'+ tweet.Text + '</p>';
-            html += '<a class="twitterdate" href="https://twitter.com/'+tweet.ScreenName+'/status/'+tweet.Id+'">'+tweet.Date+'</a>';
-            html += '<span class="twitteractions"><a href="https://twitter.com/intent/tweet?in_reply_to=' + tweet.Id + '"><i class="reply"/>Reply</a><a href="https://twitter.com/intent/retweet?tweet_id='+tweet.Id+'"><i class="retweet" />Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=' + tweet.Id + '"><i class="favorite" />Favorite<a/></span>';
-            html += '</div>';
-            $("#twitter").html(html);
-        },'json');
-    });
-</script>
