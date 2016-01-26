@@ -218,6 +218,10 @@
 	margin:auto;
 }
 
+.post-content p {
+  overflow-x: auto;
+}
+
 .post 
 {
     margin-bottom: 20px;
