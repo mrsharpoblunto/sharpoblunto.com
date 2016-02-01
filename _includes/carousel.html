@@ -1,0 +1,29 @@
+<div id="{{include.id}}" class="carousel slide" data-interval="false">
+  <ol class="carousel-indicators">
+    {% for img in include.images %}
+    {% if forloop.index == 1 %}
+      <li data-target="#{{include.id}}" data-slide-to="{{forloop.index}}" class="active"></li>
+    {% else %}
+      <li data-target="#{{include.id}}" data-slide-to="{{forloop.index}}"></li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    {% for img in include.images %}
+    {% if forloop.index == 1 %}
+    <div class="item active">
+    {% else %}
+    <div class="item">
+    {% endif %}
+      <img src="{{img.src}}" alt="{{img.caption}}" />
+      <div class="carousel-caption">
+        <p>{{img.caption}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#{{include.id}}" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#{{include.id}}" data-slide="next">&rsaquo;</a>
+</div>

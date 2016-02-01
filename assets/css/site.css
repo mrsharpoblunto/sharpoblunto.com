@@ -119,7 +119,7 @@
 	margin-top:17px;
 }
 
-#nav-twitter, #nav-rss
+#nav-twitter, #nav-rss, #nav-github
 {
 	float:right;
 	width:26px;
@@ -137,6 +137,7 @@
 	#nav-twitter
 	{
 		right: 61px;
+		margin-left:5px;
 		background: url(/assets/images/twitter.png) no-repeat 0 0;
 	}
 
@@ -146,6 +147,12 @@
 		margin-left:5px;
 		margin-right:10px;
 		background: url(/assets/images/rss.png) no-repeat 0 0;
+	}
+
+	#nav-github
+	{
+		right: 92px;
+		background: url(/assets/images/github.png) no-repeat 0 0;
 	}
 }
 
@@ -219,6 +226,17 @@
 }
 
 .post-content p {
+  overflow-x: auto;
+}
+
+.post-content figure.highlight {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.post-content p img {
+  margin-top: 20px;
+  margin-bottom: 20px;
   overflow-x: auto;
 }
 
