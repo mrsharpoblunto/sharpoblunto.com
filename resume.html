@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <style>
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+      	margin: 0;
+      	padding: 0;
+      	border: 0;
+      	font-size: 100%;
+      	font: inherit;
+      	vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+      	display: block;
+      }
+      body {
+      	line-height: 1;
+      }
+      ol, ul {
+      	list-style: none;
+      }
+      blockquote, q {
+      	quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+      	content: '';
+      	content: none;
+      }
+      table {
+      	border-collapse: collapse;
+      	border-spacing: 0;
+      }
+      a {color:#3333FF;}
+      a:visited {color:#3333FF;}
+      a:hover {color:#3333FF;}
+      a:active {color:#3333FF;}
+    </style>
+    <style>
+      @media print {
+        @page {
+          size: 210mm 297mm;
+          margin: 25mm;
+          margin-right: 45mm;
+        }
+      }
+      html, body {
+        font-family: 'Open sans',sans-serif;
+        font-size: 14px;
+        color: #151515;
+        text-rendering: optimizeLegibility;
+      }
+
+      @media screen {
+          html {
+            background-color: #eee;
+            width: 100%;
+          }
+          body {
+            background-color: #fff;
+            margin: 0 auto;
+            max-width: 60rem;
+            padding: 4rem;
+            box-sizing: border-box;
+          }
+      }
+
+      p {
+        line-height: 110%;
+      }
+
+      i {
+        font-style: italic;
+      }
+
+      section {
+        margin-top: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid #151515;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.1rem;
+      }
+
+      div.item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      div.item aside {
+        text-align: center;
+        width: 8rem;
+        flex-shrink: 0;
+      }
+
+      div.item aside h5 {
+        font-size: 0.8rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        color: #333;
+      }
+
+      div.item main {
+        padding: 0rem 1rem;
+        border-left: 1px solid #eee;
+        margin: 0.5rem 0;
+      }
+
+      div.item main h4 {
+        line-height: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        text-transform: uppercase;
+      }
+
+      div.item main p {
+        padding-bottom: 0.5rem;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      header ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      header ul li {
+        color: #444;
+        border-left: 1px solid #eee;
+        padding: 0 0.5rem;
+        font-size: 0.875rem;
+      }
+
+      header ul li:first-child {
+        border-left: none;
+        padding: 0 0.5rem 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Glenn Conner</h1>
+      <ul>
+        <li>(415) 794 1196</li>
+        <li><a href='mailto:glenn.conner@sharpoblunto@gmail.com'>glenn.conner@sharpoblunto.com</a></li>
+        <li><a href='https://www.sharpoblunto.com'>www.sharpoblunto.com</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <h2>Work experience</h2>
+        <div class='item'>
+          <aside>
+            <h5>2015 - 2016</h5>
+            <p>Brocade</p>
+          </aside>
+          <main>
+            <h4>Staff Software engineer</h4>
+            <p>
+              Full stack engineer and team lead for the <i>Brocade Services Director</i> product web UI (built using <i>Python</i> and <i>Javascript</i>). Architect and technical lead for a next generation web UI framework currently being adopted across all <i>Brocade</i> software products based on <i>Node.js</i>, <i>React.js</i> & <i>Redux</i>.
+            </p>
+          </main>
+        </div>
+
+        <div class='item'>
+          <aside>
+            <h5>2011 - 2015</h5>
+            <p>Riverbed</p>
+          </aside>
+          <main>
+            <h4>Staff Software engineer</h4>
+            <p>
+              Responsible for building technology acquired from <i>Aptimize</i> into <i>Riverbed's</i> product portfolio. Wrote reliable, high performance HTTP server code in <i>C++</i> that transformed and optimized large volumes of web traffic. Co-authored a pending patent related to optimizing web assets loaded via <i>Javascript</i>. Built a distributed test automation system using <i>Node.js</i>, <i>Python</i>, <i>LXC</i>, and <i>Vagrant</i>.
+            </p>
+
+          </main>
+        </div>
+
+        <div class='item'>
+          <aside>
+            <h5>2009 - 2011</h5>
+            <p>Aptimize</p>
+          </aside>
+          <main>
+            <h4>Software development engineer</h4>
+            <p>
+              First employee at <i>Aptimize</i>, a startup that created some of the worlds first automated runtime web performance optimization technology. Involved in the design and development of the initial prototypes through to the final market ready products using <i>C++</i> and <i>C#</i>. <i>Aptimize</i> was successfully acquired by <i>Riverbed Technolgies</i> in 2011.
+            </p>
+          </main>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class='item'>
+          <aside>
+            <p>Massey<br/>University</p>
+          </aside>
+          <main>
+            <h4>Bachelor of Engineering with Honors</h4>
+            <p>
+              Majored in Software engineering. Graduated in top 5% of college of sciences at Massey University, awarded Massey Scholarship.
+            </p>
+          </main>
+        </div>
+      </section>
+      <section>
+        <h2>Publications and personal projects</h2>
+        <div class='item'>
+          <aside>
+            <p>Github
+              <svg aria-hidden="true" class="octicon octicon-mark-github" style="margin-left: 0.5rem;" height="1rem" role="img" version="1.1" viewBox="0 0 16 16" width="1rem"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+            </p>
+          </aside>
+          <main>
+            <a href='https://github.com/mrsharpoblunto'>github.com/mrsharpoblunto</a>
+          </main>
+        </div>
+        <div class='item'>
+          <aside>
+            <p>3D Graphics</p>
+          </aside>
+          <main>
+            <p>
+              Junkship - A game that utilizes procedural algorithms to dynamically generate detailed 3D solar systems using GPU processing. Built using <i>C++</i>, <i>DirectX 11</i>, and <i>HLSL</i>.
+            </p>
+            <a href='https://www.junkship.net'>www.junkship.net</a>
+          </main>
+        </div>
+        <div class='item'>
+          <aside>
+            <p>SaaS</p>
+          </aside>
+          <main>
+            <p>
+              Syncappate - A service that allows you to sync, back-up, and share the settings from your favorite Windows and OSX applications. Built using <i>Node.js</i>, <i>React.js</i>, <i>C++</i>, <i>C#</i>, <i>Objective-C</i>, and <i>Swift</i>.
+            </p>
+            <a href='https://www.syncappate.com'>www.syncappate.com</a>
+          </main>
+        </div>
+        <div class='item'>
+          <aside>
+            <p>IoT</p>
+          </aside>
+          <main>
+            <p>
+              A Raspberry Pi based Wifi enabled Garden sprinkler system that can be controlled via a built in web UI or by HomeKit compatible Apps. Built using <i>Node.js</i>, <i>React.js</i>, and <i>Redux</i>.
+            </p>
+            <a href='https://github.com/mrsharpoblunto/it-gets-the-hose-again'>https://github.com/mrsharpoblunto/it-gets-the-hose-again</a>
+          </main>
+        </div>
+        <div class='item'>
+          <aside>
+            <p>Bioinformatics</p>
+          </aside>
+          <main>
+            <p>Holland B., Conner G., Huber K., Moulton V. <i>Imputing supertrees and supernetworks from quartets.</i> Systematic biology, 2007 Feb;56(1):57-67</p>
+          </main>
+        </div>
+      </section>
+    </main>
+    <section>
+      <h2>Languages and technologies</h2>
+      <p>Proficient in <i>C++</i>, <i>Javascript</i> (both browser and Node.js), <i>C#</i>,  and <i>HTML/CSS</i>. Previous experience with <i>Python</i>, <i>C</i>, <i>Java</i>, <i>Swift</i>, <i>Objective-C</i>, <i>PHP</i>, <i>Lua</i>, <i>SQL</i>, <i>MongoDB</i>, and <i>HLSL</i>.
+    </section>
+  </body>
+</html>
