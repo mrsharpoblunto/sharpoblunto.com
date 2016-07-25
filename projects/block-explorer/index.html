@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Block explorer</title>
+        <style>
+            #container {
+                position: relative;
+                display: inline-block;
+            }
+            #canvas {
+                display: block;
+            }
+            #score {
+                position: absolute;
+                top: 10px;
+                right: 90px;
+                transition: color 0.2s ease-out;
+                transition: font-size 0.2s ease-out;
+            }
+            .score-change {
+                color: #00ff00;
+                font-size: 24px;
+            }
+            .boost-wrapper {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 65px;
+                height: 20px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+            #boost {
+                height: 100%;
+            }
+            #instructions {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 20px;
+                transition: opacity 7s ease-out;
+            }
+            .fade-out {
+                opacity: 0;
+            }
+            html, body {
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                font-family: sans-serif;
+                color: #fff;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <canvas id="canvas"></canvas>
+            <span id="score"></span>  
+            <div class="boost-wrapper">
+                <div id="boost"></div>
+            </div>
+            <div id="instructions">Acquire red and blue blocks. Use arrows to move and hold space to boost</div>
+        </div>
+    <script type="text/javascript" src="bundle.js"></script></body>
+</html>
