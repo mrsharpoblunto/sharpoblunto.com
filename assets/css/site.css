@@ -127,6 +127,10 @@
 	text-indent:-9999px;
 }
 
+.twitter-timeline-rendered {
+  background: #fff;
+}
+
 @media (min-width:766px)
 {
 	#nav-extra
@@ -243,6 +247,23 @@
 .post 
 {
     margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #fff;
+}
+
+ 
+.post:first-child {
+  border: none;
+  padding-top: 0;
+}
+
+
+.post h6 .label-info:first-child {
+  margin-left: 10px;
+}
+
+.post h5:last-child {
+  padding-top: 10px;
 }
 
 .post .label a
@@ -436,4 +457,8 @@ a.toggle {
 .page-header .small
 {
 	color: #666;
+}
+
+.label-info {
+  background-color: #08c;
 }
