@@ -248,15 +248,17 @@
 {
     margin-bottom: 20px;
     padding-top: 20px;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #eee;
 }
 
- 
 .post:first-child {
   border: none;
   padding-top: 0;
 }
 
+.post.content {
+  padding-top: 10px;
+}
 
 .post h6 .label-info:first-child {
   margin-left: 10px;
@@ -446,6 +448,7 @@ a.toggle {
 {
 	padding-bottom: 0;
 	margin: 20px 0px 10px;
+  border-bottom: 2px solid #eee;
 }
 
 
