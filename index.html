@@ -4,16 +4,16 @@ redirect_from: /News/index.html
 ---
 
 <div class="row">
-    <div class="span8">
+    <div class="col-lg-8">
         <div class="content">
         {% for post in paginator.posts %}
             <div class="post">
             <h4><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h4>
-            <h6>Posted on {{ post.date | date: "%b %-d, %Y" }}
+            <p class="font-weight-light text-muted">Posted on {{ post.date | date: "%b %-d, %Y" }}
                 {% for tag in post.tags %}
-                    <span class="label label-info">{{ tag }}</span>
+                    <span class="badge badge-light">{{ tag }}</span>
                 {% endfor %}
-            </h6>
+            </p>
             <div class="post-content">
                 {{ post.content }}
             </div>
@@ -21,35 +21,45 @@ redirect_from: /News/index.html
             </div>
         {% endfor %}
         {% if paginator.total_pages > 1 %}
-            <div class="pagination">
-            <h5>
-            {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | remove: '/index.html' }}/">&laquo; Prev</a>
-            {% else %}
-                <span>&laquo; Prev </span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <em>{{ page }}</em>
-                {% elsif page == 1 %}
-                    <a href="/">{{ page }}</a>
+            <nav aria-label="Post navigation">
+              <ul class="pagination">
+                {% if paginator.previous_page %}
+                <li class="page-item">
+                  <a class="page-link" href="{{ paginator.previous_page_path | remove: '/index.html' }}/">Previous</a>
                 {% else %}
-                    <a href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                 {% endif %}
-            {% endfor %}
+                </li>
 
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}/"> Next &raquo;</a>
-            {% else %}
-                <span>Next &raquo;</span>
-            {% endif %}
-            </h5>
-            </div>
+                {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">{{ page }}</a>
+                    {% elsif page == 1 %}
+                    <li class="page-item">
+                        <a class="page-link" href="/">{{ page }}</a>
+                    {% else %}
+                    <li class="page-item">
+                        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginator.next_page_path }}/">Next</a>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+                {% endif %}
+                </li>
+              </ul>
+            </nav>
         {% endif %}
-        </div>
+      </div>
     </div>
-    <div class="span4">
+    <div class="col-lg-4 d-none d-lg-block">
         {% include archive.html %}
     </div>
 </div>

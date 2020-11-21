@@ -4,14 +4,14 @@
   <body>
     {% include header.html %}
     <div class="row">
-        <div class="span8">
+        <div class="col-lg-8">
             <div class="post content">
                 <h4><a href="{{ page.url | remove: '.html' }}">{{ page.title }}</a></h4>
-                <h6>Posted on {{ page.date | date: "%b %-d, %Y" }}
+                <p class="font-weight-light text-muted">Posted on {{ page.date | date: "%b %-d, %Y" }}
                     {% for tag in page.tags %}
-                        <span class="label label-info">{{ tag }}</span>
+                        <span class="badge badge-light">{{ tag }}</span>
                     {% endfor %}
-                </h6>
+                </p>
                 <div class="post-content">
                     {{ content }}
                 </div>
@@ -33,7 +33,7 @@
 
             </div>
         </div>
-        <div class="span4">
+        <div class="col-lg-4 d-none d-lg-block">
             {% include archive.html %}
         </div>
     </div>

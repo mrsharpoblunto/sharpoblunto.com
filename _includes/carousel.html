@@ -12,18 +12,24 @@
   <div class="carousel-inner">
     {% for img in include.images %}
     {% if forloop.index == 1 %}
-    <div class="item active">
+    <div class="carousel-item active">
     {% else %}
-    <div class="item">
+    <div class="carousel-item">
     {% endif %}
-      <img src="{{img.src}}" alt="{{img.caption}}" />
-      <div class="carousel-caption">
+      <img src="{{img.src}}" alt="{{img.caption}}" class="d-block w-100" />
+      <div class="carousel-caption d-none d-md-block">
         <p>{{img.caption}}</p>
       </div>
     </div>
     {% endfor %}
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#{{include.id}}" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#{{include.id}}" data-slide="next">&rsaquo;</a>
+  <a class="carousel-control-prev" href="#{{include.id}}" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#{{include.id}}" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
 </div>

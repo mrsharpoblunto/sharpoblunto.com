@@ -5,16 +5,21 @@ redirect_from:
 - /Contact/index.html
 ---
 <div class="row">
-    <div class="span8">
+    <div class="col-lg-8">
         <div class="content">
             <div class="page-header">
                 <h3>About Me</h3>
             </div>
             <p>Helping you answer such questions as, who am I? and what am I doing here?</p>
             <div id="aboutme">
-                I am Glenn Conner, a software developer from New Zealand now residing in San Francisco. This site serves as my personal soapbox to espouse my thoughts on software, technology, and the modern world.<br />
+              <img class="d-none d-sm-block" src="/assets/images/aboutme.jpg" alt="picture of me" />
+              <div>
+                  I am Glenn Conner, a software developer from New Zealand now residing in San Francisco. This site serves as my personal soapbox to espouse my thoughts on software, technology, and the modern world.<br />
+              </div>
             </div>
-        <h3>Other places you'll find me</h3>
+        <div class="page-header">
+          <h3>Other places you'll find me</h3>
+        </div>
         <ul>
             <li>
                 <h4><a href="https://www.junkship.net">Junkship</a></h4>
@@ -24,11 +29,15 @@ redirect_from:
                 <h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/17366137">Imputing supertrees and supernetworks from quartets</a></h4>
                 <p>I contributed to this bioinformatics research paper by developing a program to automatically reconstruct missing taxa from gene trees using the Q-Imputation method.</p>
             </li>
+            <li>
+              <h4><a href="https://medium.com/@mr.sharpoblunto">Medium publications</a></h4>
+              <p>Things I've published on medium, mostly related to website performance</p>
+            </li>
         </ul>
  
         </div>
     </div>        
-    <div class="span4">
+    <div class="col-lg-4">
         <div class="content side-content infobox">
         {% include socialmedia.html %}
 <h4>Resume</h4>

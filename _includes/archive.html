@@ -13,12 +13,12 @@
    {% for post in site.posts %}
 
      {% unless post.next %}
-         <li class="archivedate collapsed"><h4><a class="toggle"><span class="toggle-arrow">&#9654;</span> {{ post.date | date: '%Y' }}</a></h4><ul>
+         <li class="archivedate collapsed"><h5><a class="toggle"><span class="toggle-arrow">&#9654;</span> {{ post.date | date: '%Y' }}</a></h5><ul>
      {% else %}
          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
          {% if year != nyear %}
-            </ul></li><li class="archivedate collapsed"><h4><a class="toggle"><span class="toggle-arrow">&#9654;</span> {{ post.date | date: '%Y' }}</a></h4><ul>
+            </ul></li><li class="archivedate collapsed"><h5><a class="toggle"><span class="toggle-arrow">&#9654;</span> {{ post.date | date: '%Y' }}</a></h5><ul>
          {% endif %}
      {% endunless %}
      <li class="news-post"><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></li>
