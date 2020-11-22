@@ -13,7 +13,7 @@ tags:
 ##### [Play the game here (Chrome recommended)](/projects/block-explorer/)
 
 ##### Source code
-{%include github-star.html repo="webgl-starter" %}{%include github-follow.html %}
+{%include github-star.html repo="rover-hack" %}{%include github-follow.html %}
 
 As part of work I recently had a chance to participate in a 3 day game-jam. In the past I've always steered clear of game jams because the ideas I'm usually interested in building have no way of being realized within the time limits. This time however I decided to give it a shot and decided to build a 3D game in the browser using webGL.
 
@@ -28,10 +28,3 @@ With this in mind, I put together a nice WebGL starter framework based on the Co
 Now that you have an idea of what I wanted to build, and how I went about building it - check out what I actually ended up building, subject to the constraints of time. While its not the most fun game in the world, I'm happy with how it turned out and I have a new appreciation for the effort it takes to convey a fun sense of motion through controls, physics, and a camera.
 
 I had so much fun building the game, that I'm considering starting work on the procedural mad-max-meets-kerbal-space-program-on-a-road-trip sim I've been thinking about for a while. I think it would be really cool to build a fully fledged game in the browser, with all the inherent advantages in rapid development that javascript & the browser offer, combined with all the performance problems that come with it that need to be overcome.
-
-NOTE: So while the code started out nice and clean, over the course of 3 days of hacking it became a garbage fire of TODO's and HACK's, so I won't be posting the source up until I have a chance to clean it up :)
-
-
-
-
-
