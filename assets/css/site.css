@@ -243,6 +243,13 @@ a.toggle {
     margin-top: 20px;
 }
 
+#disqus_recommendations
+{
+	margin-top: 40px;
+	border-top: 1px solid #d0d0d0;
+	padding-top: 20px;
+}
+
 /** about page styles */
 
 #aboutme {

@@ -14,7 +14,7 @@ I started off on a calm evening in a resort nestled at the base of the Berawan B
 
 
 
-[![](/assets/images/news/PHUb1UwEE0Sd01UBuc1EaA.jpg "Untitled-2")](/assets/images/news/snHOWlz_9UCHAV8zYlB67A.jpg)
+![](/assets/images/news/snHOWlz_9UCHAV8zYlB67A.jpg)
 
 
 
@@ -22,15 +22,14 @@ Dodging the rockets I commandeered a Civadier 999 Cabriolet and tried to shake t
 
 
 
-[![](/assets/images/news/05Jmb8ipQUOO5WxNG4w2KA.jpg "Untitled-6")](/assets/images/news/pApy22RO2E6OXxlGxqoymw.jpg)
-
+![](/assets/images/news/pApy22RO2E6OXxlGxqoymw.jpg)
 
 
 However I hadn’t counted on the Civadier’s terribly twitchy handling which meant that on my first high speed turn I ended up hitting a bump in the road and hurtling off a cliff, narrowly avoiding landing in a river. Luckily this misadventure seemed to satisfy the attack helicopter pilots desire for carnage and he moved off in search of other targets.
 
 
 
-[![That&#39;ll buff right out](/assets/images/news/WZX6FgGTuUiGPQuA2D8yRg.jpg "Untitled-9")](/assets/images/news/PQyxU-4RJ0aPeRA_oFX2kQ.jpg)
+![That&#39;ll buff right out](/assets/images/news/PQyxU-4RJ0aPeRA_oFX2kQ.jpg)
 
 
 
@@ -38,7 +37,7 @@ After swimming across the river, I made my way back to the resort and this time 
 
 
 
-[![](/assets/images/news/qU6p1G714Eq5dhOB8TXuZQ.jpg "Untitled-14")](/assets/images/news/4x1vYPaEjkOsslfIXgANGg.jpg)
+![](/assets/images/news/4x1vYPaEjkOsslfIXgANGg.jpg)
 
 
 
@@ -46,7 +45,7 @@ I saw a few people in the distance as I made the ascent, but by and large the bi
 
 
 
-[![](/assets/images/news/BeSWZ61jnkKQ1y_a5TTZUA.jpg "Untitled-13")](/assets/images/news/OqhWSAmfg0GXEYH3JhU0LQ.jpg)
+![]/assets/images/news/OqhWSAmfg0GXEYH3JhU0LQ.jpg
 
 
 
@@ -54,15 +53,14 @@ As the afternoon headed toward evening I was approaching the summit. I passed th
 
 
 
-[![](/assets/images/news/KanbCRBlWk64oyT5yprSFw.jpg "Untitled-12")](/assets/images/news/5XXnvbypeE225p2sO1ZboA.jpg)
-
+![](/assets/images/news/5XXnvbypeE225p2sO1ZboA.jpg)
 
 
 After consulting the map it seemed like a high speed burn down a ski slope in a rear wheel drive sports car in failing light might not be such a bad idea after all. It was certainly the most direct route, and it would ensure that I would arrive (assuming I arrived at all) at the base of the ski resort in the dead of night from an unexpected angle, meaning that I would have a better chance of slipping by anyone waiting at the resort complex.
 
 
 
-[![](/assets/images/news/35-xjCRhIEKL2mtQRR4DFQ.jpg "Untitled-16")](/assets/images/news/WAfXtBPU30Sxs088y6ouXw.jpg)
+![](/assets/images/news/WAfXtBPU30Sxs088y6ouXw.jpg)
 
 
 
@@ -70,7 +68,7 @@ After some masterful driving I found myself near the base of the slope looking d
 
 
 
-[![](/assets/images/news/X5p4BIGR0kSpKNGafQn-FQ.jpg "Untitled-17")](/assets/images/news/kFhPwAitWUy0P5RaxGzGng.jpg)
+![](/assets/images/news/kFhPwAitWUy0P5RaxGzGng.jpg)
 
 
 
@@ -78,7 +76,7 @@ This mostly turned out to be a good plan, except for the part where I flew off a
 
 
 
-[![](/assets/images/news/L1i-tJx5bkmi8LpSsezwfA.jpg "Untitled-18")](/assets/images/news/VcH8t0XC_EaehgvwI6357g.jpg)
+![](/assets/images/news/VcH8t0XC_EaehgvwI6357g.jpg)
 
 
 
@@ -86,7 +84,7 @@ It was good to be on flat roads again as I cruised south with the sun rising ove
 
 
 
-[![](/assets/images/news/gjia5bql00S0P6WeLsK9jw.jpg "Untitled-19")](/assets/images/news/Q-A64Q2Y30etirHm7mB6Sw.jpg)
+![](/assets/images/news/Q-A64Q2Y30etirHm7mB6Sw.jpg)
 
 
 
@@ -94,7 +92,7 @@ As the rockets fell overhead it became apparent that this guy wasn’t going to 
 
 
 
-[![](/assets/images/news/ZXTLSOErWkuusIZFQgKm4Q.jpg "Untitled-21")](/assets/images/news/uvxo5aJzkUSjduldQrSEUQ.jpg)
+![](/assets/images/news/uvxo5aJzkUSjduldQrSEUQ.jpg)
 
 
 
@@ -102,15 +100,14 @@ Having no other choice I backtracked my way out of the jungle and made my way ba
 
 
 
-[![](/assets/images/news/OaZTkbPrN02PdX1d2lMi2w.jpg "Untitled-22")](/assets/images/news/UBjl-t-IZUmroK0W9_xxkA.jpg)
-
+![](/assets/images/news/UBjl-t-IZUmroK0W9_xxkA.jpg)
 
 
 The next morning, after sheltering the night in a small fishing village, I hiked down the road a couple of miles and found a small airport. Not knowing how to fly a plane (lets keep up the suspension of belief eh?) the light aircraft were not much use to me, so I picked out a Hamaya Cougar 600 road bike and left the area trying not to gain the attention of the locals.
 
 
 
-[![](/assets/images/news/Q_5jhmesIkeBfyZeVeNLPg.jpg "Untitled-24")](/assets/images/news/cIV-u3UMPU-kaxuYCm-mrg.jpg)
+![](/assets/images/news/cIV-u3UMPU-kaxuYCm-mrg.jpg)
 
 
 
@@ -118,9 +115,10 @@ I began heading west toward the river delta at the southern end of the Lautan La
 
 
 
-[![Seems I&#39;m not the only one who has problems weith the Civadier&#39;s handling](/assets/images/news/umTXAkmrw02q-XcveXyVjQ.jpg "Untitled-26")](/assets/images/news/jeDbwmXmkEiEQpfx9Pi4-Q.jpg)
+![Seems I&#39;m not the only one who has problems weith the Civadier&#39;s handling](/assets/images/news/jeDbwmXmkEiEQpfx9Pi4-Q.jpg)
 
-[![Untitled-25](/assets/images/news/mKh4GkvnRUW4WSRSHofKLg.jpg "Untitled-25")](/assets/images/news/NZ4t98efoUuX2ZRNsgKAsA.jpg)[![](/assets/images/news/sWm_eSfjH0e_MgM98ArHMQ.jpg "Untitled-40")](/assets/images/news/prBlwgAmskuRvqqCNZIYEg.jpg)
+![](/assets/images/news/NZ4t98efoUuX2ZRNsgKAsA.jpg)
+![](/assets/images/news/prBlwgAmskuRvqqCNZIYEg.jpg)
 
 
 
@@ -128,7 +126,7 @@ My bike wasn’t exactly in good shape at this point so I stopped at a small tow
 
 
 
-[![Untitled-28](/assets/images/news/B7gOOwn2gE6OyJj9nqyjDA.jpg)](/assets/images/news/-CjdPxOPdEiQKOc3hDaVKA.jpg)
+![Untitled-28](/assets/images/news/-CjdPxOPdEiQKOc3hDaVKA.jpg)
 
 
 
@@ -136,7 +134,7 @@ Not satisfied with nearly drowning me he then proceeded to try to run me down in
 
 
 
-[![666 miles per hour](/assets/images/news/XsIvb_SrN0WFeSRz3n0Sxw.jpg)](/assets/images/news/enEuajLOCkGmLDHCcNC0Cw.jpg)
+![666 miles per hour](/assets/images/news/enEuajLOCkGmLDHCcNC0Cw.jpg)
 
 
 
@@ -144,7 +142,7 @@ That is until I had an unfortunate high speed impact with a gas station and had 
 
 
 
-[![Untitled-30](/assets/images/news/hIFRZG_j20-BV9RLYYAwNg.jpg)](/assets/images/news/Qxmw7MDVFESoWtRSFisb4A.jpg)
+![](/assets/images/news/Qxmw7MDVFESoWtRSFisb4A.jpg)
 
 
 
@@ -152,7 +150,9 @@ After my last run-in I took great pains to keep my distance from any adversaries
 
 
 
-[![](/assets/images/news/dU-oQoj-rUWiC_LpEtshjA.jpg "Untitled-33")](/assets/images/news/yAhbi-E-SkKMAasacIzRsA.jpg)[![](/assets/images/news/4iCCRt4nnEqlpaIatVHFWw.jpg "Untitled-34")](/assets/images/news/M-dl7dVqvUqkZ247Sirwag.jpg)[![](/assets/images/news/Oh9DJEyaEE6SA9RFrRknxA.jpg "Untitled-37")](/assets/images/news/8VtXr6VBcUavNLA604rAqw.jpg)
+![](/assets/images/news/yAhbi-E-SkKMAasacIzRsA.jpg)
+![](/assets/images/news/M-dl7dVqvUqkZ247Sirwag.jpg)
+![](/assets/images/news/8VtXr6VBcUavNLA604rAqw.jpg)
 
 
 
@@ -160,7 +160,7 @@ I arrived at the airport early in the morning hopeful that some sort of organize
 
 
 
-[![](/assets/images/news/2ax3KDeVNUGr6j-dlCae2g.jpg "Untitled-36")](/assets/images/news/kjy9A5EQXUefwnkOGWmO3A.jpg)
+![](/assets/images/news/kjy9A5EQXUefwnkOGWmO3A.jpg)
 
 
 
@@ -168,7 +168,7 @@ All around me planes and helicopters flipped and crashed amid torrents of gunfir
 
 
 
-[![Everything will be okay in Panau City - I promise](/assets/images/news/rQj9ay36eUuR11qdeRjDrg.jpg "Untitled-38")](/assets/images/news/Yhw9u6eZw0SvMSHXVugyUA.jpg)
+![Everything will be okay in Panau City - I promise](/assets/images/news/Yhw9u6eZw0SvMSHXVugyUA.jpg)
 
 
 
