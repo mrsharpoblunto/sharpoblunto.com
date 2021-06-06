@@ -20,7 +20,7 @@ redirect_from:
             <div class="project-content">
                 <img src="/assets/images/projects/it-gets-the-hose-again.jpg" class="img-polaroid">
                 <div class="project-description">
-                  <p>It gets the hose again is an automated garden irrigation control system I designed and built using a Raspberry Pi. It is able to schedule garden waterings and uses the OpenWeatherMap API's to intelligently cancel watering if its already raining in the current area. The system can be controlled via a web interface built with Node.js, React.js, & Redux. The system can also be controlled via voice operation using Siri and integration with Apples HomeKit APIs.</p>
+                  <p>It gets the hose again is an automated garden irrigation control system I designed and built using a Raspberry Pi. It is able to schedule garden waterings and uses the OpenWeatherMap API's to intelligently cancel watering if its already raining in the current area. The system can be controlled via a web interface built with Node.js, React, & Redux. The system can also be controlled via voice operation using Siri and integration with Apples HomeKit APIs.</p>
                     <span>  
                         <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/it-gets-the-hose-again">View on GitHub</a> 
                         <a class="btn" href="/News/2016/01/25/it-gets-the-hose-again">View information</a>
@@ -74,20 +74,36 @@ redirect_from:
 <div class="row">
     <div class="col-12">
         <div class="content">
-            <div class="page-header" id="bobbytables">
-                <h3>BobbyTables <small>An ORM library for the Dropbox datastore API available for .NET and Node.js</small></h3>
+            <div class="page-header" id="lumiere">
+                <h3>Lumiere <small>Animated LED visualizations</small></h3>
             </div>
             <div class="project-content">
-                <img src="/assets/images/projects/bobbytables.jpg" class="img-polaroid">
+                <img src="/assets/images/projects/lumiere.jpg" class="img-polaroid">
                 <div class="project-description">
-                    <p>BobbyTables is an ORM library for the Dropbox datastore API available for .NET and Node.js. It handles serializing and deserializing objects to and from the remote Dropbox datastore as well as handling pushing/pulling updates. The BobbyTables .Net version supports .Net 2+, Silverlight 4+, Windows Phone 7.5+, and Windows store applications.</p>
-                    <h4>.NET</h4>
+                  <p>
+                  Lumiere is a Raspberry PI based controller for visualizations on LED matrix screens. I use it for a a virtual fireplace & aquarium installation, but it can be extended with further visualizations. The system can be controlled via a web interface built with Node.js & React. The system can also be controlled via voice operation using Siri and integration with Apples HomeKit APIs.</p>
                     <span>  
-                        <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/BobbyTables">View on GitHub</a>  <a class="btn" href="http://mrsharpoblunto.github.io/BobbyTables/">View website</a> <a class="btn" href="https://www.nuget.org/packages/BobbyTables/">NuGet Package</a>
+                        <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/lumiere">View on GitHub</a> 
                     </span>
-                    <h4>Node.js</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content">
+            <div class="page-header" id="lightr">
+                <h3>Lightr <small>A control for a Philips Hue light that lets you control Hue/Saturation/Lightness</small></h3>
+            </div>
+            <div class="project-content">
+                <img src="/assets/images/projects/lightr.jpg" class="img-polaroid">
+                <div class="project-description">
+                  <p>Lightr is a Raspberry PI based controller for a Philips Hue smart bulb. With 3 rotary encoder switches it allows you to control the Hue/Saturation/Lightness of the bulb & shows the current values on a small OLED screen. When idle the OLED screen also functions as a digital clock.
+                  </p>
                     <span>  
-                        <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/BobbyTables.js">View on GitHub</a>  <a class="btn" href="https://www.npmjs.com/package/bobbytables">NPM Package</a>
+                        <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/lightr">View on GitHub</a> 
                     </span>
                 </div>
             </div>
@@ -106,7 +122,6 @@ redirect_from:
                 <div class="project-description">
                     <p>This site allows you to generate convincing sounding randomly generated project names. The name generation is done using Markov chains and an input dictionary consisting of popoular JavaScript project names on GitHub.</p>
 					<p>The library behind all the Markov chain construction and word generation has been released as Foswig.js and is available on GitHub under the MIT license.</p>
-					<p>In order to view this site, you will need a browser which supports HTML5 web workers, as all Markov chain generation is done on a separate worker thread to the page UI.</p>
                     <span>  
                         <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/foswig.js/">View on GitHub</a> <a class="btn" href="http://mrsharpoblunto.github.io/foswig.js/">View website</a>
                     </span>
@@ -126,29 +141,9 @@ redirect_from:
                 <img src="/assets/images/projects/dukes.jpg" class="img-polaroid">
                 <div class="project-description">
                     <p>The Dukebox of Hazzard (Dukes for short) is a music player that allows multiple users to share and contribute to the music being played from a single set of speakers. The primary use case for Dukes is in office or social situations where there is a single music player, but where multiple people would like to pick the music to be played. Dukes ensures everyone gets to hear the music they want by adding each users picks in a round robin so that everyone gets thier fair share of play time.</p>
-                    <p>Dukes runs as a standalone HTTP server on any modern version of Windows, and is accessible via a web based UI on any device or operating system including iOS, Android, OSX, Windows, and Linux.</p>
+                    <p>Dukes runs as a standalone HTTP server on any modern version of Windows, and is accessible via a web based UI on any device or operating system.</p>
                     <span>  
                         <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/dukes">View on GitHub</a> <a class="btn" href="/downloads/dukessetup.exe">Download app</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="content">
-            <div class="page-header" id="utorrent">
-                <h3>uTorrent Mobile <small>A popular uTorrent remote control application for feature phones</small></h3>
-            </div>
-            <div class="project-content">
-                <img src="/assets/images/projects/utorrent.jpg" class="img-polaroid">
-                <div class="project-description">
-                    <p>uTorrent Mobile allows you to remotely control uTorrent using your mobile device. You can download the app using the download link below and copy the utorrent.jad and utorrent.jar files to your phone before installing. This application has been tested on a Motorola V3x, and Nokia 6120 classic. It has been confirmed to work on most Nokias, and Blackberries, and should work on anything else that supports j2me applications.</p>
-                    <p>In order to be able to use this application, you first need to ensure that your WebUI has a publicly accessible URL, this usually involves setting up your router port forwarding rules so the webUI server is accessible. Once this is done, start the application and enter the url of your webui (dont include the /gui at the end of the url, this is appended automatically) and your username/password, from there you should be able to view and edit all your active torrents.</p>
-                    <span>  
-                        <a class="btn btn-primary" href="https://github.com/mrsharpoblunto/utorrentmobile">View on GitHub</a> <a class="btn" href="/downloads/utorrentmobile_bin.zip">Download app</a>
                     </span>
                 </div>
             </div>
