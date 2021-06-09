@@ -18,7 +18,7 @@ The only problems with Dukes were that the UI was pretty terrible, and due to th
 
 
 
-[![image](/assets/images/news/QI7spVXBcUuCN3fX4YYlqw.png "image")](/assets/images/news/FNxB69HWq0yr4WHyq3G4UQ.png)
+![image](/assets/images/news/FNxB69HWq0yr4WHyq3G4UQ.png)
 
 
 
@@ -26,7 +26,7 @@ I also ripped through the server side c# code and gave everything a good polish,
 
 
 
-[![image](/assets/images/news/sE5Kx_uV00-WEoZMUxLHKg.png "image")](/assets/images/news/8OmFhFFnuEmcHlGRDa667w.png)
+![image](/assets/images/news/8OmFhFFnuEmcHlGRDa667w.png)
 
 
 

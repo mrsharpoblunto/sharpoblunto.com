@@ -11,7 +11,7 @@ After being spoiled with the power of the command line and all the great text ba
 
 
 
-[![image](/assets/images/news/rb-eKHqOjEur9TFBC7I-ug.png "image")](/assets/images/news/oCBGFVBg80eeIhslXMiJGQ.png)
+![image](/assets/images/news/oCBGFVBg80eeIhslXMiJGQ.png)
 
 
 
