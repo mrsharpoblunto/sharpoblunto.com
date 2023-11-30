@@ -90,4 +90,5 @@ M84 X Y E ;Disable all steppers but Z
 ##### Next steps
 I'm now printing pretty reliably good prints with PLA, so the next thing is to familiarize myself with Blender so I can put together some custom 3D models to print. The first project I want to tackle is a custom tenting mount for my ZSA Moonlander keyboard - If thats successful I'll post the results up here in future.
 
+Update: I did end up creating the moonlander bracket. You can check it out [here](https://www.thingiverse.com/thing:4881967). Its also listed on the ZSA printables page [here](https://www.zsa.io/moonlander/printables/).
 
