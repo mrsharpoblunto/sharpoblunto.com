@@ -13,4 +13,4 @@ Well today is a momentous day, as it is now possible to answer with certainty, W
 
 lolmap is (Update: was) an application that uses the Google to find and geolocate the sources of the most popular lolz on all of the internets. Use it wisely, because after all internet lolz are serious business.
 
-![image[5]](/assets/images/news/nVK1t6j8BUyyio-87PRm3Q.jpg "image[5]")
+{% include image.html src="/assets/images/news/nVK1t6j8BUyyio-87PRm3Q.jpg" %}

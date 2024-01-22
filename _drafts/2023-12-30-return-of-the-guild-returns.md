@@ -164,7 +164,7 @@ DRAW $y
 ```
 
 Which renders as
-![PLAY](/assets/images/projects/guild/play.png)
+{% include image.html src="/assets/images/projects/guild/play.png" %}
 
 #### System speed compensation
 The original QBasic (to my knowledge) had no way of sleeping for less than one second & this was a problem if you wanted to control the speed of animations or gameplay elements across different PC's. Nowadays QB64 has some commands to solve this, but my teenage self originally solved it using some busy waiting as shown below

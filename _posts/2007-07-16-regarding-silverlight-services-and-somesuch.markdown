@@ -31,13 +31,13 @@ While most of the effects found in WPF are present in Silverlight there are stil
 
 On the plus side, I was impressed by Silverlight's rendering speed even at this early stage in its development, as I went out of my way to fill the whole screen up with as many shiny gradients and subtle animations as possible (in addition to the physics modelling) and it still ran along at a decent clip and was responsive to user input even on lower spec machines. 
 
-![Untitled-3](/assets/images/news/40ai4zyT402YMYSsoqeo6w.jpg "Untitled-3") 
+{% include image.html src="/assets/images/news/40ai4zyT402YMYSsoqeo6w.jpg" %}
 
  
 #### Not just eye candy     
 In addition to the draggable books and physics already in-place I wanted to try and implement something that would at least hint at the fact the having all this rich client functionality allows developers to create experiences that are not only more attractive, but also more responsive and in some ways fundamentally different to what is possible using traditional web technologies. My attempt at this was to implement some gesture based controls into the application such that if you shook a book that was connected to another book it would break the link between them, this made it much easier to keep books you wanted on screen and delete unwanted items in a way that felt natural given the physical representation of the books on-screen. While I didn't have the opportunity to pursue further gesture based controls, It certainly would have been possible to remove almost all the buttons from the GUI and have an entirely gesture based interface. 
 
-![Untitled-1](/assets/images/news/9sMwVn_MmUmpBbaNjlaAjA.jpg "Untitled-1") 
+{% include image.html src="/assets/images/news/9sMwVn_MmUmpBbaNjlaAjA.jpg" %}
 
  
 While its very debatable whether my application is useful rather than just fun to play around with, I think it does illustrate the point that Silverlight has a lot of potential to create some very interesting and powerful experiences on the web, and while there are certainly some issues present in the current releases, I can only see it getting better from here.     

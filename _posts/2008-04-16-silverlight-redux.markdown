@@ -11,7 +11,7 @@ After my [earlier experiments](/News/2007/07/16/regarding-silverlight-services-a
 
 
 
-[![image[9]](/assets/images/news/jwVpyM_JH0iLGpwXScGyhA.jpg "image[9]")](/assets/images/news/Po0tVugPf0-riQmc7lm8WQ.jpg) 
+{% include image.html src="/assets/images/news/jwVpyM_JH0iLGpwXScGyhA.jpg" %}
 
 
 
@@ -31,7 +31,7 @@ Web service support has drastically improved since the alpha releases. In 1.1 cr
 
 
 
-[![image[14]](/assets/images/news/eXo1BXrP9E23FOEf57w8kw.jpg "image[14]")](/assets/images/news/USxqeVS9x0-IYzeC44xYZA.jpg) 
+{% include image.html src="/assets/images/news/eXo1BXrP9E23FOEf57w8kw.jpg" %}
 
 
 

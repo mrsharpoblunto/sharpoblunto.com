@@ -17,20 +17,27 @@ It works as an ASP.Net httphandler and maps local proxy endpoints to their real 
 
 In addition to the usual web.config changes to add an httphandler (detailed in the instructions bundled with the soapproxy components download) I had to add the following config entry to the tarantula.sharpoblunto.com site to map the proxy end point to the real amazon service endpoint
 
-{% highlight xml %}
+``` xml
 <soapProxyComponent>    
  <endPointMappings>     
-  <mapping proxyEndPoint="amazon.ashx" remoteEndPoint="http://soap.amazon.com/onca/soap?Service=AWSECommerceService" />     
+  <mapping 
+    proxyEndPoint="amazon.ashx" 
+    remoteEndPoint="http://soap.amazon.com/onca/soap?Service=AWSECommerceService" 
+  />     
  </endPointMappings> 
 </soapProxyComponent>
-{% endhighlight %}
+```
 
 Then in Tarantula I had to change the service endpoint in the ServiceReferences.ClientConfig to point to the proxy address instead of the real endpoint.
 
-{% highlight xml %}
-<endpoint address="http://www.sharpoblunto.com/amazon.ashx"    
- binding="basicHttpBinding" bindingConfiguration="AWSECommerceServiceBinding" 
-contract="Tarantula.AmazonWebService.AWSECommerceServicePortType" name="AWSECommerceServicePort" />
-{% endhighlight %}
+``` xml
+<endpoint 
+  address="http://www.sharpoblunto.com/amazon.ashx"    
+  binding="basicHttpBinding" 
+  bindingConfiguration="AWSECommerceServiceBinding" 
+  contract="Tarantula.AmazonWebService.AWSECommerceServicePortType" 
+  name="AWSECommerceServicePort" 
+/>
+```
 
 In practice it's worked perfectly. I hope this tip comes in handy for those trying to access third party web services from silverlight beta 2 apps.

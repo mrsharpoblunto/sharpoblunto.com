@@ -13,7 +13,7 @@ Well I had that thought yesterday, and figured that there must be some free tool
 
 The end result is an app which builds a graph of all the projects and dependancies in a directory (plus its subdirectories) as well as the relative sizes of those projects. In addition the graph is fully moveable by the mouse and all the nodes and points behave with realistic physics (I reused my Tarantula physics engine developed [a while back](http://www.sharpoblunto.com/News/2007/07/16/regarding-silverlight-services-and-somesuch))     
 
-[![dependancyAnalyzer](/assets/images/news/1d0EXdJnSke-6EEOmgNF7g.jpg "dependancyAnalyzer")](/assets/images/news/ZUwtOoPXcUGtK6C4-STi1w.jpg)     
+{% include image.html src="/assets/images/news/1d0EXdJnSke-6EEOmgNF7g.jpg" alt="dependancyAnalyzer" %}
 
 The app is written in c# 2.0 and is available in binary or source code form (under the conditions of the MIT license)     
 

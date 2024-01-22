@@ -16,7 +16,8 @@ The reason for this is that your components library, and your parent project bot
 
 After struggling with this issue, I found a workaround that doesn't involve changing the library or parent project considerably, so I thought I'd post it here to help anyone who has this issue in future. Include this file before you require or import React and the error will magically go away. The easiest way I've found to include this is to have a single file index.js which exports all your libraries components, and in your package.json add the file below as loader.js and set it as the "main" file. This file should then, after patching the loader, require index.js. This way you don't have to change any of your component code.
 
-{% highlight javascript %}const m = require('module');
+``` javascript
+const m = require('module');
 const originalLoad = m._load;
 
 const packageConfig = require('../package.json');
@@ -61,7 +62,7 @@ if (peerDeps) {
 //Now export the library components
 module.exports = require('./index');
 m._load = originalLoad;
-{% endhighlight %}
+```
 
 ##### NOTE:
 One caveat to note is that if you are building a distribution of your components library using webpack, you'll have to conditionally exclude this code from running by using a conditional and the webpack DefinePlugin otherwise webpack builds will fail due to not being able to load the 'module' module.

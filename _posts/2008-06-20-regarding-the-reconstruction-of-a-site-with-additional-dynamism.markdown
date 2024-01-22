@@ -11,7 +11,7 @@ Of late I've done a redesign of the home page for one of my side projects [Junks
 
 
 
-![image_thumb[6]](/assets/images/news/Le0Zm2JdQ0SxEtJgGMAS1A.jpg "image_thumb[6]") 
+{% include image.html src="/assets/images/news/Le0Zm2JdQ0SxEtJgGMAS1A.jpg" %}
 
 
 

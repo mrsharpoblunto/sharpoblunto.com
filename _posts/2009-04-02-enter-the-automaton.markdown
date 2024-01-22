@@ -23,6 +23,6 @@ below is a screenshot of it in action, as usual you can find the source code [he
 
 **Note:** By default the server runs on port 8086 (This can be changed in the configuration file) so to navigate to the server you should go to http://localhost:8086/
 
-![image_thumb[7]](/assets/images/news/RL_CHAgV9kCABjFu8mBBmA.jpg "image_thumb[7]") 
+{% include image.html src="/assets/images/news/RL_CHAgV9kCABjFu8mBBmA.jpg" %}
 
 Writing extra plug-ins should be fairly self explanatory (if you know c#) if you have a look at the source. but if its not, let me know :) and I’ll try to help you out.

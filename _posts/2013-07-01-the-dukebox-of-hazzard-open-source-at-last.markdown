@@ -26,7 +26,7 @@ I also ripped through the server side c# code and gave everything a good polish,
 
 
 
-![image](/assets/images/news/8OmFhFFnuEmcHlGRDa667w.png)
+{% include image.html src="/assets/images/news/8OmFhFFnuEmcHlGRDa667w.png" %}
 
 
 

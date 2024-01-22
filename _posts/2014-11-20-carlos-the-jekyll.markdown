@@ -12,8 +12,7 @@ After a quick look around [Jekyll](http://jekyllrb.com/) emerged as the most sui
 
 The most time consuming job was transferring the content of my old blog archive database (where all the blog content was stored as html) and converting it to markdown that could be rendered by Jekyll. The first step was to write a bit of c# to dump each database post row into a file. Then I needed to convert the html to markdown; to do this I wrote a [Node.js](http://nodejs.org/) script based on the [to-markdown](https://github.com/domchristie/to-markdown) package to convert the html archive which I've included below.
 
-{% highlight javascript %}
-
+``` javascript
 var toMarkdown = require('to-markdown').toMarkdown;
 var fs = require('fs');
 
@@ -33,7 +32,6 @@ fs.readdir('.',function(err,files) {
             processFile(files[i]);
     }
 });
-
-{% endhighlight %}
+```
 
 Its weird how technology sometimes circles back on itself, some of the very first websites I ever built were static html, and now in 2014 I've ditched server side code and databases in favour of static html again. I guess it goes to show that sometimes the simplest solutions are often the best.

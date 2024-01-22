@@ -15,23 +15,23 @@ As a language lua takes a &quot;less is better&quot; approach and instead provid
 
 when a lua script encounters an error you can get the error message from the top of the lua stack by calling  
 
-{% highlight lua %}
+``` lua
 lua_tostring(luaState,-1);
-{% endhighlight %}
+```
 
 however wouldn't it be more useful to get a full stack trace to give you more context as to where and why the error occurred? Luckily lua includes a nifty mechanism for hooking into events during script execution and while these can be used for all sorts of extremely cool and powerful things, I'll be showing how you can use these events to build a call stack.
 
 firstly lets create a list of strings (we'll be using it as a stack...),a new lua state and hook up some events to it. The lua _sethook function allows you to hook in a number of events and provide a callback function to call when these events occur. In this case we want to be notified whenever a function is called (LUA_MASKCALL) or whenever a function returns (LUA_MASKRET)
 
-{% highlight c++ %}
+``` c++
 std::list<std::string> _stack;
 _state = luaL_newstate();
 lua_sethook(_state,&FunctionHook,LUA_MASKCALL | LUA_MASKRET,0);
-{% endhighlight %}
+```
 
 This should allow us to build up a callstack by pushing information on the last called function onto a stack, then popping the top off the stack every time a function returns, simple eh? now on to the implementation of the callback function
 
-{% highlight c++ %}
+``` c++
 void FunctionHook(lua_State *l, lua_Debug *ar)
 {
 
@@ -42,10 +42,9 @@ void FunctionHook(lua_State *l, lua_Debug *ar)
 
   std::stringstream ss;
   ss << ar->short_src << ":"
-
-  << ar->linedefined << ": "
-  << (ar->name == NULL ? "[UNKNOWN]" : ar->name)
-  << " (" << ar->namewhat << ")";
+    << ar->linedefined << ": "
+    << (ar->name == NULL ? "[UNKNOWN]" : ar->name)
+    << " (" << ar->namewhat << ")";
 
   _stack.push_front(ss.str());
  }
@@ -58,7 +57,7 @@ void FunctionHook(lua_State *l, lua_Debug *ar)
   }
  }
 }
-{% endhighlight %}
+```
 
 This function gets automatically called whenever a function is called or a function returns. Each time a call event takes place we push some information regarding that function (name, line number etc...) onto our call stack, and every time a function returns we pop it from the call stack.
 

@@ -11,15 +11,13 @@ tags:
 ![Project image](/assets/images/projects/block-explorer/hero.jpg)
 
 ##### [Play the game here (Chrome recommended)](/projects/block-explorer/)
-
-##### Source code
 {%include github-star.html repo="rover-hack" %}{%include github-follow.html %}
 
 As part of work I recently had a chance to participate in a 3 day game-jam. In the past I've always steered clear of game jams because the ideas I'm usually interested in building have no way of being realized within the time limits. This time however I decided to give it a shot and decided to build a 3D game in the browser using webGL.
 
 The initial idea revolved around driving a robotic rover that could transition from multi-legged movement into a crazy monowheel (inspired by a [desert spider](https://www.youtube.com/watch?v=brh8Fv7Lw9M) that does backflips to evade predators).
 
-![Mono-wheel](/assets/images/projects/block-explorer/mono-wheel.jpg)
+{%include image.html src="/assets/images/projects/block-explorer/mono-wheel.jpg" alt="mono-wheel" %}
 
 I didn't really have many gameplay ideas in mind other than trying to make it a fun and satisfying experience to just cruise around and get used to the weird locomotion mechanics. I figured if I got as far as having terrain generation working and a competent third person camera set up by the end of the jam that I would have exceeded my expectations.
 

@@ -171,16 +171,18 @@
 }
 
 /** blog post styles */
-.post-content pre.highlight, .post-content figure.highlight {
+.post-content pre.highlight {
   width: 100%;
   margin: 1.0rem 0;
   padding: 0.5rem;
 }
 
 .post-content iframe, .post-content a img, .post-content p img, .post-content video {
-	display:block !important;
+  display: block !important;
   margin: 1.0rem auto;
   max-width: 100%;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
 }
 
 .post-content iframe {
@@ -351,4 +353,19 @@ a.toggle {
 .page-header .small
 {
 	color: #666;
+}
+
+.image-bg
+{
+  width: 100%;
+  display: flex;
+  background: #cfcfcf;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.image-bg img {
+  max-width: 100%;
+  margin: 0 auto;
 }

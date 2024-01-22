@@ -96,7 +96,7 @@ As a last minute addition I noticed that once all the components were sealed awa
 
 To control the GPIO ports I used the [onoff](https://github.com/fivdi/onoff) library which makes it simple to set the state of any of the Raspberry Pi's GPIO ports. I wrote the following test script to test my initial circuit. When running it toggles GPIO port 22 once every second, which meant that once I attached the circuit above, I should hear the relay click on and off once per second like a metronome.
 
-{% highlight javascript %}
+``` javascript
 import onoff from 'onoff';
 
 output = new onoff.Gpio(22,'out');
@@ -108,7 +108,7 @@ setInterval(() => {
 },1000);
 
 process.on('SIGINT',() => output.unexport());
-{% endhighlight %}
+```
 
 Initially nothing worked, I found after some multimeter testing that I had soldered the pin header on backwards so none of the outputs were going where I expected them to. After filing off the notch key on the parallel cable connecting the Pi to the protoboard and plugging it in the other way, everything worked! The relay clicked happily every time I ran my test script. After determining that everything was working, and with the help of some epoxy cement, superglue, silicon sealant, and some old parts from a PC case I got everything attached securely into the plastic enclosure and added waterproof cable glands to the entry points for the power and solenoid cables.
 
