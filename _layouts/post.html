@@ -4,7 +4,7 @@
   <body>
     {% include header.html %}
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-9">
             <div class="post content">
                 <h4><a href="{{ page.url | remove: '.html' }}">{{ page.title }}</a></h4>
                 <p class="font-weight-light text-muted">Posted on {{ page.date | date: "%b %-d, %Y" }}
@@ -33,7 +33,7 @@
 
             </div>
         </div>
-        <div class="col-lg-4 d-none d-lg-block">
+        <div class="col-lg-3 d-none d-lg-block">
             {% include archive.html %}
         </div>
     </div>

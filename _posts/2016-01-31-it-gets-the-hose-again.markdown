@@ -55,7 +55,6 @@ The thought of building something that was more than just software has been eati
 
 The general design I came up with was to use the Raspberry Pi running a web server, this server would host a web interface and a scheduler and would control a solenoid water valve attached to the Pi. I'd place the completed device in a waterproof enclosure attached to the water supply a set of drip irrigation piping. With this in mind I put together my initial shopping list.
 
-<br />
 #### The hardware
 
 {% include carousel.html id="assembly-carousel" images=page.assembly_carousel %}
@@ -77,21 +76,18 @@ The general design I came up with was to use the Raspberry Pi running a web serv
 - 1 x power splitter
 - 1 x USB wifi dongle
 
-<br />
 #### Controlling the switch
 
 I decided to use a 24V AC relay as it is the most commonly available solenoid valve. This meant that I was going to need to devise some control circuitry as the Raspberry Pi runs at 5.5v and its GPIO ports can only supply 3.3v so I wouldn't just be able to hook it up directly. The way I did this was to use a relay that would activate when 5v was put across one side, this would be used as a switch to control the 24vac switch. To activate the relay I used a transistor with the base attached to one of the Raspberry Pi's GPIO ports - the 3.3v is enough to energize the base of the transistor, which would complete the circuit to ground providing the 5v across the relay, letting us switch the solenoid via a single GPIO port being on/off. The circuit diagram for this is shown below.
 
-![The sprinkler circuit](/assets/images/projects/it-gets-the-hose-again/sprinkler.png)
+{% include image.html alt="The sprinkler circuit" src="/assets/images/projects/it-gets-the-hose-again/sprinkler.png" %}
 
-<br />
 #### Status LEDs
 
 As a last minute addition I noticed that once all the components were sealed away there would be no way of knowing if it was running or what the software was doing, so I decided to add a set of 3 status LED's. One LED would indicate power, one would indicate that the server software was running, and the 3rd would illuminate when the solenoid switch was activated. The circuit diagram for this is shown below.
 
-![Status circuit](/assets/images/projects/it-gets-the-hose-again/status-board.png)
+{% include image.html alt="Status circuit" src="/assets/images/projects/it-gets-the-hose-again/status-board.png" %}
 
-<br />
 #### Initial testing
 
 To control the GPIO ports I used the [onoff](https://github.com/fivdi/onoff) library which makes it simple to set the state of any of the Raspberry Pi's GPIO ports. I wrote the following test script to test my initial circuit. When running it toggles GPIO port 22 once every second, which meant that once I attached the circuit above, I should hear the relay click on and off once per second like a metronome.
@@ -113,7 +109,6 @@ process.on('SIGINT',() => output.unexport());
 Initially nothing worked, I found after some multimeter testing that I had soldered the pin header on backwards so none of the outputs were going where I expected them to. After filing off the notch key on the parallel cable connecting the Pi to the protoboard and plugging it in the other way, everything worked! The relay clicked happily every time I ran my test script. After determining that everything was working, and with the help of some epoxy cement, superglue, silicon sealant, and some old parts from a PC case I got everything attached securely into the plastic enclosure and added waterproof cable glands to the entry points for the power and solenoid cables.
 
 
-<br />
 #### The web UI
 
 {% include carousel.html id="webui-carousel" images=page.webui_carousel %}
@@ -129,7 +124,6 @@ As mentioned previously, the idea was to build a server that would run a schedul
 The most complex part of the UI was implementing the configuration interface for the weather based intelligent watering (I didn't want to water the garden if it was already raining). To do this I used the [Google maps API](https://developers.google.com/maps/) along with the [HTML5 geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) to determine the users current location when they elect to switch on intelligent watering in the settings. With this I could collect the users latitude and longitude coordinates which I could pass into the [OpenWeatherMap](https://openweathermap.org/) API to determine the weather in the users area.
 In addition to the web UI I implemented a scheduler which wakes up periodically to see if the user scheduled any waterings for the current time and runs the valve for a preset interval, unless of course intelligent watering is enabled, in which case it checks if its already raining and if it is, it doesn't bother watering.
 
-<br />
 #### HomeKit and voice activated control
 
 {% include carousel.html id="homekit-carousel" images=page.homekit_carousel %}

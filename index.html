@@ -4,7 +4,7 @@ redirect_from: /News/index.html
 ---
 
 <div class="row">
-    <div class="col-lg-8">
+    <div class="col-lg-9">
         <div class="content">
         {% for post in paginator.posts %}
             <div class="post">
@@ -17,7 +17,7 @@ redirect_from: /News/index.html
             <div class="post-content">
                 {{ post.content }}
             </div>
-            <h5><a class="comment-link" data-disqus-identifier="{{ post.url | remove: '.html' }}" href="{{ post.url | remove: '.html' }}#disqus_thread"></a></h5>
+            <a class="comment-link" data-disqus-identifier="{{ post.url | remove: '.html' }}" href="{{ post.url | remove: '.html' }}#disqus_thread"></a>
             </div>
         {% endfor %}
         {% if paginator.total_pages > 1 %}
@@ -59,7 +59,7 @@ redirect_from: /News/index.html
         {% endif %}
       </div>
     </div>
-    <div class="col-lg-4 d-none d-lg-block">
+    <div class="col-lg-3 d-none d-lg-block">
         {% include archive.html %}
     </div>
 </div>

@@ -300,6 +300,8 @@ a.toggle {
 /** bootstrap overrides */
 .carousel.slide {
   background-color:#d0d0d0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
   margin: 1rem 0;
 }
 
@@ -359,7 +361,7 @@ a.toggle {
 {
   width: 100%;
   display: flex;
-  background: #cfcfcf;
+  background: #d0d0d0;
   border: 1px solid #ccc;
   border-radius: 2px;
   margin-bottom: 1rem;
