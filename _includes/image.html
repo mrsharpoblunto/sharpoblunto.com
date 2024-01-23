@@ -1,3 +1,8 @@
-<div class="image-bg">
-  <img src="{{include.src}}" alt="{{include.alt}}" />
-</div>
+<figure class="post-image">
+  <div>
+    <img src="{{include.src}}" alt="{{include.alt}}" />
+  </div>
+  {% if include.caption %}
+  <figcaption>{{include.caption}}</figcaption>
+  {% endif %}
+</figure>

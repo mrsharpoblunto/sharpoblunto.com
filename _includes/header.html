@@ -3,7 +3,7 @@
   <div id="header-row" class="row">
     <div class="col-12">
         <h1><span class="light">sharpo</span><span class="dark">blunto</span></h1>
-        <h5>Over the event horizon, toward the singularity</h5>
+        <h5 id="banner-text">Over the event horizon, toward the singularity</h5>
     </div>
     <div class="col-12" id="header-nav-bg">
         <ul>
@@ -18,5 +18,18 @@
         </div>
     </div>
   </div>
+  <script>
+    const bannerText = document.getElementById('banner-text');
+    const bannerTexts = [
+      'Over the event horizon, toward the singularity',
+      'They say he made the spoon himself, from a bigger spoon',
+      'Hexapodia is the key insight',
+      'The pelagic argosy sights land',
+      'Any brilliant idea will fall apart eventually',
+      'Lost in time, like tears in rain',
+    ];
+    const bannerTextIndex = Math.floor(Math.random() * bannerTexts.length);
+    bannerText.innerHTML = bannerTexts[bannerTextIndex];
+  </script>
 
 
