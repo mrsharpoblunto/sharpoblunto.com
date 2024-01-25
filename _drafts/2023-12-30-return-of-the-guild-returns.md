@@ -392,8 +392,7 @@ This was the most complex effect in the whole game, and it worked in several sta
 I really enjoyed getting Guild working again but this is almost certainly the last time I will program anything in QBasic. Writing this post also ended up being a cathartic experience, and I feel I've finally given Guild the proper send off long after its abrupt departure. 
 
 *At this point, I'm happy for what it is and that it will remain unfinished forever.*  
-
-(I've also put the source up on Github, but I really don't recommend looking at it)
+(I've also put the [source up on GitHub](https://github.com/mrsharpoblunto/guild-the-return), but I really don't recommend looking at it)
 
 Getting another chance to experience my long-lost work again reminded me that most creative pursuits don't hold up well over time, but it also reminded me that its not the artifacts themselves that are important. Revisiting something you've made allows you to revisit some of your state of mind that bought that thing into being - thats what's valuable. In my case, being able to channel that feeling that I had staring at that blue terminal all those years ago, watching the blinking cursor and thinking that if I wanted to, I could build just about anything. While many details of my life have changed since then, I realized that I still get that feeling from time to time staring at a blank editor, that feeling hasn't changed a bit, and I hope it never does.
 
