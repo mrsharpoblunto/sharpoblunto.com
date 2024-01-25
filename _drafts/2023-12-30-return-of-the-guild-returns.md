@@ -16,7 +16,7 @@ I'd been introduced to the concept of programming a year or two before by a frie
 
 {% include image.html caption="A blue screen full of promise" src="/assets/images/projects/guild/startup-screen.png" %}
 
-It didn't really occur to me previously that games or software in general were things that people actually made. From my perspective they were just there and sometimes new ones came out, and some were better than others, but the notion of someone deciding to actually build a computer game wasn't something I'd really considered. This newfound knowledge of programming changed that for me though and I started thinking through what it would take for me to create a game using QBasic. I spent enormous amounts of time in front of that blue screen, writing small demo's and projects and slowly improving to the point where it seemed feasable to do something bigger. The same friend who introduced me to QBasic in the first place shared similar interests and sensibilities, so we spent a lot of time comparing notes on how to solve programming problems and theorizing on how we could make the Best Game Ever. This all eventually cohered into an effort to build something that my 13 year old self considered relatively achievable. It was going to be an epic JRPG with the strange and awkward name of "Guild The Return" and it was going to have a huge sprawling plot, multiple characters, and a complex battle system.
+It didn't really occur to me previously that games or software in general were things that people actually made. From my perspective they were just there and sometimes new ones came out, and some were better than others, but the notion of someone deciding to actually build a computer game wasn't something I'd really considered. This newfound knowledge of programming changed that for me though and I started thinking through what it would take for me to create a game using QBasic. I spent enormous amounts of time in front of that blue screen, writing small demo's and projects and slowly improving to the point where it seemed feasable to do something bigger (I also made my first money from software at this time, selling a QBasic learning course I created called *QBasic for losers and angry loners* - it sold 3 copies). The same friend who introduced me to QBasic in the first place shared similar interests and sensibilities, so we spent a lot of time comparing notes on how to solve programming problems and theorizing on how we could make the Best Game Ever. This all eventually cohered into an effort to build something that my 13 year old self considered relatively achievable. It was going to be an epic JRPG with the strange and awkward name of "Guild The Return" and it was going to have a huge sprawling plot, multiple characters, and a complex battle system.
 
 Of course as we've already covered things didn't quite pan out and Guild would never be completed, but considering how little I knew and how limited the tools available to me, I actually got quite far. I wrote the beginnings of a story and built a couple of levels where you (a red square) could walk around some basic geometric environments, talk to other characters, solve some basic puzzles, buy items, and engage in questionably entertaining combat. To speed up development I wrote a level editor which allowed me to draw out environments in a rough paint-like interface. Performance was always a problem and I would be frequently stumped by QBasic's limitations, but having near infinite time especially during holidays I could waste away days trying literally everything in the tree of possibilities until I found something that worked.
 
@@ -318,19 +318,82 @@ Which renders as
 
 #### Overlays & reducing flicker with XOR
 
-// TODO explanation
+A problem I constantly had with QBasic was flickering animation. It wasn't possible to do double buffered animation in Screen mode 12 (640x480) which I was using for the game (and I didn't know how to do double buffered animation anyway). Clearing the screen, then redrawing the screen introduced horrible flickering, so I had to find workarounds to only clear the minimum amount of the screen possible in order to animate things.
+
+One way I found to do this was to use the `Xor` (Exclusive OR) boolean operator when drawing. The way this worked is that the `Put` command for blitting a sprite to the screen could also include a boolean operator that would take the existing screen pixel and apply the operator to the sprites pixel. In the case of Xor it has the useful property that `A Xor B Xor B == A`, which means if you render a sprite over an existing image, and then re-render over it again it disappears, giving you flicker free animation. The funny thing about this is that I didn't know anything about boolean algebra at the time and had no idea what Xor was really doing, I found this purely by chance and saw that adding Xor magically worked for my purpose.
+
+Of course the problem with this is that the first Xor changes the colors of your original sprite - so I had to work around that, but in some cases this was actually useful as shown below where the location names on the map are written in a color that appears to be highlighted over the background. This works by overlaying a white font with a black background using XOR.
 
 {% include image.html caption="Notice how the fonts appear highlighted over the background" src="/assets/images/projects/guild/xor-fonts.png" alt="Image from the game demonstrating font highlighting" %}
 
+#### Music streaming
+
+On the main menu there's a repeating song in the background. QBasic allows you to play sounds in two modes, in the foreground - where it blocks all execution of commands until the sound completes, or in the background where the sound plays while the program continues to the next instruction. This means that if you want to have music along with any interactivity, you need to use the background mode (denoted by `mb` below). The problem with this is that you periodically need to *refill* the background music buffer, but you also don't want to *overfill* the buffer because there's no way (that I knew of) to stop the music in the background buffer until it empties out.
+
+The way I dealt with this was to break up the title song into blocks of 4 notes & when the background music buffer had less than 2 notes left, insert the next 4 notes. This meant that the music played continuously, but if you selected 'New Game', and I wanted the music to stop - the music would stop after at most 6 notes, rather than playing through the entire song. Essentially I built a very crude music streaming system.
+
+``` vb
+Timer On
+musicstate = 0
+On Timer(1) GoSub menumusic
+mainmenu
+
+menumusic:
+If settings.sounds = 1 And Play(1) < 2 Then
+    Select Case menustate
+        Case 0
+            Play "mb L7 G3 D"
+        Case 1
+            Play "mb L7 G- G B G"
+        Case 2
+            Play "mb L7 C3 < G"
+        Case 3
+            Play "mb L7 o3 B > C C < B > "
+        Case 4
+            Play "mb L7 o3 G3 D"
+        Case 5
+            Play "mb L7 o3 G- G B G"
+        Case 6
+            Play "mb L7 o3 C3 < G"
+        Case 7
+            Play "mb L7 o2 B > C C < B > "
+        Case 8
+            Play "mb L7 o3 G3 D"
+        Case 9
+            Play "mb L7 o3 G- G B G >"
+        Case 10
+            Play "mb L7 o4 C3 < G"
+        Case 11
+            Play "mb L7 o3 B > C C < B > "
+    End Select
+    menustate = menustate + 1
+    If menustate > 11 Then menustate = 0
+End If
+Return
+```
+
 #### Particle effects
 
-// TODO explanation
+Particle systems are one of my favorite things to mess around with in computer graphics, I must have written dozens of them over the years, but the ones I wrote for Guild were my first. I wrote two separate particle effects in the game. The first was as part of an alternate intro sequence (which I integrated into the main game), and the second was part of the games only real puzzle. 
+
+The intro particle effect works by taking an array of coordinates for the "8" logo and offsets them by a radius & an angle and then iteratively reduces the radius and angle to create a whirlpool like effect where the logo gradually appears from a random field of dots. Luckily I'd already learned a bit of trigonometry at school, so some basic usage of `sin` & `cos` were enough to make this work.
+
+{% include image.html caption="Setting high expectations with the intro sequence" src="/assets/images/projects/guild/intro-effects.gif" alt="Particle effect in the intro sequence" %}
+
+
+The second effect was one I built as the payoff for the only puzzle I built for the game. The premise was that you needed to break into a prison complex where your team was being held, but the fence around it was electrified. Convieniantly there was a power generator building nearby and you could adjust the power level to overload the generator and blow it up, disabling the fence.
+
+This was the most complex effect in the whole game, and it worked in several stages. First I drew a series of yellow and red lines at random radii and angles outward from the center of the building to simulate the actual explosion itself. Then to fade out the explosion and show the wreckage I used the same effect, but replaced the red and yellw with green and brown so that it looked like only a crater remained. The final part was to show smoke drifting away and I did that by creating a field of randomly displaced dots and then have them move in a uniform direction to look like they were being blown in the wind.
 
 {% include image.html caption="Not a very well designed puzzle, but a fun payoff" src="/assets/images/projects/guild/particle-effects.gif" alt="Footage of an explosion with particle effects from the game" %}
 
 #### Goodbye, but not the end
 
-This is almost certainly the last time I will program anything in QBasic ever again and Guild *will* remain unfinished forever, but this post feels like a suitable send off. I've also put the source up on Github, but I really don't recommend looking at it. 
+I really enjoyed getting Guild working again but this is almost certainly the last time I will program anything in QBasic. Writing this post also ended up being a cathartic experience, and I feel I've finally given Guild the proper send off long after its abrupt departure. 
+
+*At this point, I'm happy for what it is and that it will remain unfinished forever.*  
+
+(I've also put the source up on Github, but I really don't recommend looking at it)
 
 Getting another chance to experience my long-lost work again reminded me that most creative pursuits don't hold up well over time, but it also reminded me that its not the artifacts themselves that are important. Revisiting something you've made allows you to revisit some of your state of mind that bought that thing into being - thats what's valuable. In my case, being able to channel that feeling that I had staring at that blue terminal all those years ago, watching the blinking cursor and thinking that if I wanted to, I could build just about anything. While many details of my life have changed since then, I realized that I still get that feeling from time to time staring at a blank editor, that feeling hasn't changed a bit, and I hope it never does.
 
