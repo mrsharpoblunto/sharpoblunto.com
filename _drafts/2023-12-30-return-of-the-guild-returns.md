@@ -6,11 +6,11 @@ tags:
 - qbasic
 ---
 
-I recently came across a discovery from the distant past. It didn't seem as such at first glance, just a few text files comprising a program written in an obsolete programming language, but it's not an exaggeration to say that the direction of my life and career are all a direct consequence of this programs development and presumed destruction. 
+I recently came across a discovery from my distant past. It didn't seem as such at first glance, just a few text files of code written in an obsolete programming language, but it's not an exaggeration to say that the direction of my life and career are all a direct consequence of this programs development and presumed destruction. 
 
 *This is a story of the recovery of a long lost project, how I got it running again, and reflections on a youth well wasted.*
 
-It's 1998 and I'm playing Total Annihilation. Its a skirmish in the painted desert and the framerate is even slower than usual. My hard drive has started making ticking noises which are unfamiliar to me (I've internalized all the regular patterns of clicking and whirring that typically accompany my PC's regular usage and what I'm hearing is something new to me). The game also begins stuttering for seconds at a time, but things are still mostly playable, so I stick with it while the pauses get progressively worse until the game finally freezes completely. At first annoyed, then slightly anxious I conclude at this point that my game is over & a reset will probably be required. A few half hearted ctrl-alt-delete attempts later with no response I have no choice but to press the reset button and wait for the BIOS POST sequence. However this time the sequence is different, in the terminal I see the words: `DISK BOOT FAILURE, INSERT SYSTEM DISK AND PRESS ENTER`. I didn't know what this meant yet, but I'd find out soon enough - they were telling me that my hard drive had just failed, they were telling me that I had just lost several years of work. Saved games I could get over, but I'd lost something more than that, I'd lost the source code to my unfinished masterpiece, an RPG I'd been writing in the first and only programming language I was aware of - QBasic.
+It's 1999 and I'm playing Total Annihilation. Its a skirmish in the painted desert and the framerate is even slower than usual. My hard drive has started making ticking noises which are unfamiliar to me. This is unusual because I've internalized all the regular patterns of hard drive clicking and whirring that typically accompany my PC's regular usage. The game also begins stuttering for seconds at a time, but things are still mostly playable, so I stick with it while the pauses get slowly worse until the game finally freezes completely. At first annoyed, then slightly anxious I conclude at this point that my game is over & a reset will probably be required. A few half hearted ctrl-alt-delete attempts later with no response this is confirmed and I have no choice but to press the reset button and wait for the BIOS POST sequence. The screen goes black, the PC speaker goes 'beep' and the POST screen appears, but from then on the sequence is different to the one I've seen a thousand other times. In the terminal I see the words: `DISK BOOT FAILURE, INSERT SYSTEM DISK AND PRESS ENTER`. I didn't know what this meant yet, but I'd find out soon enough - they were telling me that my hard drive had just failed, they were telling me that I had just lost several years of work. Saved games I could get over, but I'd lost something more than that, I'd lost the source code to my unfinished masterpiece, an RPG I'd been writing in the first and only programming language I was aware of - QBasic.
 
 I'd been introduced to the concept of programming a year or two before by a friend. He told me there was this weird blue text editor where you could write commands and make the computer draw images and play sounds. I took a look on my windows 95 PC and sure enough, there it was, QBasic 1.1. I tried it out and despite experiencing the frustrations that I'm sure are familiar to any beginner programmer (wtf is a Syntax error?) I was hooked by the possibilities of what I saw, a blank slate upon which I could create whatever I wanted (if I was clever enough) - and what I wanted to create were games.
 
@@ -22,7 +22,7 @@ Of course as we've already covered things didn't quite pan out and Guild would n
 
 Once I was faced with the reality that all this was lost, I must admit I wasn't really saddened, it was all too sudden and brutal and left me feeling more numb than anything else. I made myself a promise that I would *always back everything important to me up in triplicate* (which I have kept), and after briefly considering rewriting everything from memory, decided that maybe it was time to move on - I'd heard interesting things from a few friends about this thing called C & C++ which were what *"real"* games were made out of. That journey continued on into what I now refer to as *my career* and while I've still never actually completed a game, every new attempt has taught me something.
 
-So fast forwarding to the present, I was digging around inside my "d:\installers" folder and seeing if there was anything worth keeping. I used to use it to studiously keep copies of downloaded programs and their installers, but since the ubiquity of broadband it was largely unecessary and had become a junkyard I hadn't looked at in years. As I was looking around I found a folder named "floppies" and remembered that before I removed the last 3.5" floppy drive from my computer I had gone through my small pile of remaining disks and dumped their contents into this folder "just in case" there was anything useful on them. I must have done this sometime around 2009, because this was after Windows 7 was released, meaning that I no longer needed to use a floppy disk drive to install software RAID drivers for Windows XP (*remember that thing about triplicate backups...*). Anyway, I never really looked at what was there at the time, so I was curious enough to take took a look inside and noticed among a bunch of fragments of old DOS games & programs along with a bunch of files with the extension ".BAS".
+Returning to the present, for no real reason, I was digging around inside my "d:\installers" folder and seeing if there was anything worth keeping. It used to be where I would studiously keep copies of downloaded programs and their installers, but since the ubiquity of broadband it was largely unecessary and had become a junkyard I hadn't looked at in many years. As I was looking around I found a folder named "floppies" and remembered that before I removed the last 3.5" floppy drive from my computer I had gone through my small pile of remaining disks and dumped their contents into this folder "just in case" there was anything useful on them. I must have done this sometime around 2009, because this was after Windows 7 was released, meaning that I no longer needed to use a floppy disk drive to install software RAID drivers for Windows XP (*remember that thing about triplicate backups...*). Anyway, I never really looked at what was there at the time, so I was curious enough to take took a look inside and noticed among a bunch of fragments of old DOS games & programs along with a bunch of files with the extension ".BAS".
 
 Those three letters are permanently etched into my brain, its short for "basic" and each file represented a QBasic program. I recognized the names of some of the programs and also saw a folder named "GUILD". Clicking into it I saw the familiar names "LEVEL0.BAS", "LEVEL1.BAS", "BATTLE.BAS", and a bunch of others. *No way this could be what it looked like*, but sure enough as I opened several of the files they contained QBasic code that despite the years still bore some familiarity and **I had to conclude that perhaps Guild wasn't lost to time after all.**
 
@@ -36,14 +36,42 @@ There was no way that whatever version of Guild and my other QBasic programs I h
 
 #### The Return of the Guild Returns - Getting it running again
 
-Now that it was sitting right in front of me I couldn't resist trying to get it going. Luckily there's a fantastic open source project [QB64 Pheonix Edition](https://github.com/QB64-Phoenix-Edition/QB64pe) (a more active fork of the original QB64) that enables QBasic programs to run unmodified on modern operating systems along with providing some helpful new API's. So I downloaded it, opened 'start.bas', and held my breath as I pressed 'start'.
+Now that it was sitting right in front of me I couldn't resist trying to get it going. Luckily there's a fantastic open source project called [QB64 Pheonix Edition](https://github.com/QB64-Phoenix-Edition/QB64pe) (a more active fork of the original QB64) that enables QBasic programs to run unmodified on modern operating systems along with providing some helpful new API's. So I downloaded it, opened 'start.bas', and held my breath as I pressed 'start'.
 
 {% include image.html caption="Not a good start" src="/assets/images/projects/guild/fail.png" alt="Guild failing to start due to a missing file" %}
 
 Unfortunately it turned out I was going to have to change quite a few things to get Guild working again, but I did this with the clear principle in mind that I would try to keep the original code (no matter how terrible) and game experience as similar as possible. The one exception I made to this was where I changed one of the locations in level1 from an empty corridor to an entrance to a shop so I could show an example of the shop system running (as I never hooked it up to anything originally).
 
+#### Writing to the local filesystem
+The reason that it was failing on startup was due to hardcoded absolute paths that were no longer correct, so I needed a way to get the correct relative path from the executable. I also needed to change it so the game would store save files within the users home folder instead of its own executable folder. In DOS & old versions of Windows programs were pretty much free to write anywhere in the filesystem they felt like, as such it was pretty typical for game to write save & temp files to their own directory. However on modern operating systems programs don't usually have write access to their own directory, so I had to make some changes so that a directory could be created in the users home folder so the game could write files there instead. Luckily QB64 has some helpers to make this relatively easy, though the exact approach is a little different between Windows and OSX.
+
+```vb
+' Get the path relative to the executable
+Function getAppDir$ ()
+    If InStr(_OS$, "WINDOWS") Then
+        sep$ = "\"
+    Else
+        sep$ = "/"
+    End If
+    getAppDir$ = _CWD$ + sep$
+End Function
+
+' Get the path to the writable home subdirectory
+Function getDataDir$ ()
+    If InStr(_OS$, "WINDOWS") Then
+        datadir$ = _Dir$("local data") + "\guild\"
+    Else
+        datadir$ = Environ$("HOME") + "/.guild/"
+    End If
+    If Not _DirExists(datadir$) Then
+        MkDir datadir$
+    End If
+    getDataDir$ = datadir$
+End Function
+```
 #### Problems with state - its always state isn't it?
-The reason that it was failing on startup was due to hardcoded absolute paths that were no longer correct, however even if I fixed that I was still going to run into problems due to how the game was structured. The game was actually split into several separate executable files, which would then shell out to each other using the QBasic `Chain` command. In order to preserve the state of the game between these modules I also had to save state in a series of temp CSV files which I would then load from the newly chained module. The rough sequence of these looked like the following:
+
+Now that I had fixed the issue with paths, I ran into other problems due to how the game was structured. The game was actually split into several separate executable files, which would then shell out to each other using the QBasic `Chain` command. In order to preserve the state of the game between these modules I also had to save state in a series of temp CSV files which I would then load from the newly chained module. The rough sequence of these looked like the following:
 
 {% include image.html caption="I'm not saying it's good, but this is how it worked" src="/assets/images/projects/guild/architecture.png" alt="system diagram of the overall game architecture" %}
 
@@ -118,7 +146,11 @@ End Function
 
 In doing some of these changes I found that there was significant amounts of duplicated code between the modules. For example, level1 contained its own *mostly* copy pasted version of the battle system that differed only slightly in how it handled loss conditions. I was able to delete this & instead call into the newly wrapped up battle system. Likewise the in-game menu was also replicated in each of the levels - I was able to condense this down to a single shared function.
 
-Finally I had to fix the state machine that determined how to start a new game, how to load an existing game, and how to progress between levels now that the previous logic of shelling out to new levels was removed. 
+I also found that some modules were completely unused. As I mentioned above there was a fully functional shop system for buying items, weapons, and weapon upgrades. It must have been in a state of testing/development in the version I had, because the data for initializing the shop was hard coded at the top of the shop module so that it could execute independently from the rest of the game. I made a similar change to the one I did to the battle system so that other parts of the game could open the shop UI and populate it with items and upgrades. I decided that since the original game never actually used the shop I would try and insert it into an otherwise unfinished section of level1 - a doorway that in the original just gives you the message that 'through this door is just a bunch of hallways'. Now going through this door takes you to the shop. I also noticed that while the shop allows you to purchase upgrades for weapons and buy multiple weapons for the primary character, the data model used and parts of the UI are obviously not adapted to these changes and it seems like it was a work in progress. For example there is no way to switch weapons from within the shop itself, you have to go out to the in-game menu and swap weapons if you want to switch a weapon to buy an upgrade from it in the shop.
+
+{% include image.html caption="A fully functional shop, but some of the features clearly weren't completed or thought through" src="/assets/images/projects/guild/shop.png" alt="An image of the shop user interface" %}
+
+With these changes, the levels themselves and various subsystems all resided happily within a single module. The last step was to fix the state machine that determined how to start a new game, how to load an existing game, and how to progress between levels now that the previous logic of shelling out to new levels was removed. 
 
 **Load/Runloop logic before:**
 ``` vb
@@ -193,25 +225,7 @@ Function level1
 End Function
 ```
 
-#### Writing to the local filesystem
-With these changes made things were a lot closer to working, but I still hadn't fixed the original issue with absolute file paths! It was less of an issue now that the game didn't need to load/save temp files to preserve state continuously, but it was still necessary for saving/loading games & loading a few resource files from disk. I also needed to change it so the game would store save files within the users home folder instead of its own executable folder. In DOS & old versions of Windows programs were pretty much free to write anywhere in the filesystem they felt like, as such it was pretty typical for game to write save & temp files to their own directory. However on modern operating systems programs don't usually have write access to their own directory, so I had to make some changes so that a directory could be created in the users home folder so the game could write files there instead.
-Luckily QB64 has some helpers to make this relatively easy, though the exact approach is a little different between Windows and OSX.
-
-```vb
-Function getDataDir$ ()
-    If InStr(_OS$, "WINDOWS") Then
-        datadir$ = _Dir$("local data") + "\guild\"
-    Else
-        datadir$ = Environ$("HOME") + "/.guild/"
-    End If
-    If Not _DirExists(datadir$) Then
-        MkDir datadir$
-    End If
-    getDataDir$ = datadir$
-End Function
-```
-
-At this point the game actually started up & I could navigate the main menu!, but one thing I noticed was all the animations were playing *far* to quickly, so there was obviously some problem with the animation timings that I would have to fix.
+After making these changes, the game actually started up & I could navigate the main menu!, but one thing I noticed was all the animations were playing *far* to quickly, so there was obviously some problem with the animation timings that I would have to fix.
 
 {% include image.html caption="It loads!" src="/assets/images/projects/guild/it-loads.png" alt="The game main menu" %}
 
