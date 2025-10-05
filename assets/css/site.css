@@ -96,16 +96,12 @@
 	display: none;
 }
 
-#nav-twitter, #nav-rss, #nav-github
+#nav-bluesky, #nav-rss, #nav-github
 {
 	width:26px;
 	height:26px;
   margin-left: 5px;
 	text-indent:-9999px;
-}
-
-.twitter-timeline-rendered {
-  background: #fff;
 }
 
 @media (min-width:768px)
@@ -115,19 +111,31 @@
 		display: flex;
 	}
 
-	#nav-twitter
+	#nav-bluesky
 	{
-		background: url(/assets/images/twitter.png) no-repeat 0 0;
+    background-color: #fff;
+		background-image: url(/assets/images/bluesky.svg);
+    background-size: 22px;
+    background-position: 2px 3px;
+    background-repeat: no-repeat;
 	}
 
 	#nav-rss
 	{
-		background: url(/assets/images/rss.png) no-repeat 0 0;
+    background-color: #ff892d;
+		background-image: url(/assets/images/rss.svg);
+    background-size: 18px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
 	}
 
 	#nav-github
 	{
-		background: url(/assets/images/github.png) no-repeat 0 0;
+    background-color: #fff;
+		background-image: url(/assets/images/github.svg);
+    background-size: 22px;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
 	}
 }
 
